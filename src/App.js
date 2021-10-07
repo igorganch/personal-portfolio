@@ -75,11 +75,11 @@ function App() {
 
   
         <Container className="menu">
-        <Row className="myBox">
+        <div className="myBox">
             <div class="drawing-borders" id="box">
                 <p className = "myName">IHAR &nbsp; GANCHARENKA</p>
             </div>
-        </Row>
+        </div>
           
           <div className ="exp">
             <Row className="menuOptions ">
@@ -148,7 +148,7 @@ function App() {
             <h2 className = "description">Im a fullstack developer located in Ontario Canada in Toronto. <br></br><br></br>I have a crazy passion for coding, cars(german car enuthsiast) as well as lifting weights. 
             During my spare time I love to learn and create apps using diffrent langauges and am currently looking for a position to contribute and expand my abilities in programming.
             </h2> 
-           
+           {/*
             <div className ="flex-container">
             <div className = "flex-item">
                 <img className = "zoom images" src ={ig}></img>
@@ -160,7 +160,7 @@ function App() {
                 <img className = "zoom images" src ={github}></img>
             </div> 
             </div>
-
+          */}
         </div>
 
         <div className = "flex-item skillT">
@@ -188,27 +188,33 @@ function App() {
                       <tr>
                         <td align="center"><img className = "zoom images"src={js} /></td>  {/*Full Stack*/}
                         <td align="center"><img className = "zoom images"src={hmtl} /></td> {/*Front end*/}
-                        <td align="center"> <img className = "zoom images"src={java} /> </td> {/*back end*/}
+                        <td align="center"><img className = "zoom images"src={cplusspluss}/></td> {/*back end*/}
                         <td align="center"><img className = "zoom images"src={postgresql} /></td>  {/*other*/}
                       </tr>
 
                       <tr>
-                        <td></td>  {/*Full Stack*/}
+                        <td align="center"></td>  {/*Full Stack*/}
                         <td align="center"><img className = "zoom images"src={css} /></td> {/*Front end*/}
-                        <td align="center"><img className = "zoom images"src={nodejs}/></td> {/*back end*/}
+                        <td align="center"><img className = "zoom images"src={csharp}/></td> {/*back end*/}
                         <td align="center"><img className = "zoom images"src={mongo} /></td>  {/*other*/}
                       </tr>
 
                       <tr>
                         <td align="center"></td>  {/*Full Stack*/}
                         <td align="center"><img className = "zoom images"src={angular} /></td> {/*Front end*/}
-                        <td align="center"><img className = "zoom images"src={cplusspluss}/> </td> {/*back end*/}
-                        <td></td>  {/*other*/}
+                        <td align="center"><img className = "zoom images"src={java} /> </td> {/*back end*/}
+                        <td align="center"></td>  {/*other*/}
                       </tr>
                       <tr>
                         <td></td>  {/*Full Stack*/}
                         <td align="center"><img className = "zoom images"src={reactpng}/></td> {/*Front end*/}
-                        <td align="center"><img className = "zoom images"src={csharp}/></td> {/*back end*/}
+                        <td align="center"><img className = "zoom images"src={nodejs}/></td> {/*back end*/}
+                        <td align="center"></td>  {/*other*/}
+                      </tr>
+                      <tr>
+                        <td></td>  {/*Full Stack*/}
+                        <td align="center"><img className = "zoom images"src={jq}/></td> {/*Front end*/}
+                        <td align="center"><img className = "zoom images"src={python}/></td> {/*back end*/}
                         <td align="center"></td>  {/*other*/}
                       </tr>
                     </tbody>
@@ -231,11 +237,11 @@ function App() {
               </Col>
 
               <Col className= "equal text-center">
-             <p className = "mySkills">My&nbsp; skills</p>
+             <p className = "mySkills">Projects</p>
               </Col>
 
               <Col className= "equal text-center">
-              <p className = "myQualif">Projects</p>
+              <p className = "myQualif">Contact</p>
               </Col>
 
             </Row>
@@ -252,6 +258,7 @@ function App() {
           <div   style={{
     paddingBottom: '30px',
     position: 'relative',
+    top: "10%"
   
   
   }}>
@@ -288,10 +295,64 @@ function App() {
           </div>
           
           </div> 
-            
-              
-         
 
+          <div className = "contact" >
+
+          <Container className = "navigationBar">
+            <Row className = "navItems">
+              <Col className= "equal text-center">
+                <p className = "aboutMe">About&nbsp; Me</p>
+              </Col>
+
+              <Col className= "equal text-center">
+             <p className = "mySkills">My&nbsp; skills</p>
+              </Col>
+
+              <Col className= "equal text-center">
+              <p className = "myQualif">Projects</p>
+              </Col>
+
+            </Row>
+          </Container>
+        
+          <div class="content">
+          
+            <div className ="conheaderdiv">
+              <h1 className = "conheader">Contact</h1>   
+              <div>
+                <div className ="flex-item">
+                  <hr className = "conHeaderLine"></hr>
+                  <p className ="contactDesc">Want to work together? Send me a messages and also feel free to ring up my number!</p>
+                </div>
+              </div>
+            </div>
+
+
+          <div className= "contactinfo">
+            <p className ="contactDesc">18 Cedarcroft Blvd, M2R2Z2, Toronto, ON</p>
+            <p className ="contactDesc">Phone : +1 (647) 787 0734</p>
+            <p className ="contactDesc">Email : igorganch1@gmail.com</p>
+            
+          </div>
+          <div className = "button-group">
+            <div className ="flex-item">
+            <button className ="email">Send me an E-mail</button>
+            </div>
+            <div className ="flex-item">
+            <button className ="resume">Resume</button>
+            </div>
+          </div>
+
+
+
+
+
+          </div>
+
+
+        
+
+      </div>
      
 
 

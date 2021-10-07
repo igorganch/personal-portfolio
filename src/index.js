@@ -13,7 +13,7 @@ import  postgresql from './images/postgreSQL.png';
 import  PS from './images/ps.png';
 import  python from './images/python.png';
 import  c from './images/c.png';
-import  cplusspluss from './images/python.png';
+import  cplusspluss from './images/cplusspluss.png';
 import  csharp from './images/csharp.png';
 import  java from './images/java.png';
 import  mongo from './images/mongo.png';
