@@ -7,7 +7,38 @@
   --gradient: linear-gradient(90deg, #d65db1, #ff6f91, #ff9671 , #ffc75f, #f9f871), ;
 
 }
+html{
+  overflow-x:hidden;
+}
 
+
+.skills{
+
+  background: linear-gradient(90deg, #dd5e89, #f7bb97);
+	background-size: 150% 150%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow:hidden;
+  
+
+
+
+}
+
+.skillsBox{
+   
+      height: 75%;
+      width: 60%;
+
+      
+
+      margin: 0 auto;
+      
+
+
+}
 
 .home {
 	background: linear-gradient(90deg, #d65db1, #ff6f91, #ff9671 , #ffc75f);
@@ -20,6 +51,12 @@
   font-family: 'Lato', sans-serif;
   
 }
+
+.skillsChart{
+  width: 100%;
+  
+}
+
 .content {
   display: flex;
   height: 90%;
@@ -28,6 +65,7 @@
   align-items: center;
   text-align: center;
   width: 100%
+  
 }
 .button-group{
   display: flex;
@@ -36,6 +74,17 @@
   flex-direction: column;
   align-items: center;
 
+}
+
+.imgOfMe{
+  border-radius: 50%;
+  height : 28vmin;
+  width: 28vmin;
+}
+
+
+.conheaderdivt{
+  width: 60%;
 }
 .box {
   background: #0479D9;
@@ -65,8 +114,29 @@
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+  width: 90%;
+  bottom: 0;
+  padding-bottom: 2%;
   
 
+}
+.flex-container-et{
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 1%;
+  padding-bottom: 5% ;
+
+  
+}
+.badge-spacing{}
+.badges{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.extras {
+  width: 100%;
+  position: absolute; 
+  bottom: 0;
 }
 
 
@@ -94,19 +164,84 @@
 }
 
 .images{
-  width: 7vmin;
-  height: 7vmin;
+  width: 5vmin;
+  height: 5vmin;
 }
 .aboutPage {
-	background: linear-gradient(90deg, #121113, #170f1f, #27004e,#1f013d);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	background-color:rgb(0, 0, 0);
+  background-image: url(./images/stars.png);
+	background-size: cover;
+	
 	height: 100vh;
   justify-content: center;
   align-items: center;
   overflow:hidden;
+  z-index: -2;
+
 
 }
+.pushToFront{
+  position: absolute;
+  z-index: 2;
+}
+
+button.invis{
+background:none; 
+border:none;
+}
+.blackObj{
+
+  position: absolute;
+  background-image: url(./images/twinkling.png);
+
+  height: 100%;
+  width: 400%;
+  right: 15%;
+  
+  animation: twinklestars 7s linear infinite ;
+  animation-direction: alternate;
+  z-index: 0;
+  
+}
+
+.clouds{
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url(./images/clouds.png);
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  opacity: 50%;
+  animation: cloudsMove 25s infinite linear;
+}
+
+
+@keyframes cloudsMove {
+  0% {
+    margin-left: -1920px;
+}
+100% {
+    margin-left: 100%;
+}
+  
+}
+
+@keyframes twinklestars {
+
+  0%{
+    
+
+  }
+  100%{
+
+      transform: translateX(10%) ;
+
+
+  }
+  
+}
+
 
 .contact{
 	background: linear-gradient(90deg, #000000 , #666666);
@@ -194,6 +329,22 @@
   align-items: flex-start;
 }
 
+.navigationSkills{
+  width: 100%;
+  align-items: flex-start;
+  
+}
+.skillsP{
+  font-size: 2vmin;
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+.navigationSkills p {
+  font-size: 2vmin;
+  color: white;
+  font-family: 'Lato', sans-serif;
+
+}
 
 .navigationBar p {
   font-size: calc(5vmin / 2);
@@ -273,13 +424,7 @@ margin: 0 auto;
   
 }
 
-.skills{
 
-  width: 70vmin;
-  
-  margin: 0 auto;
-
-}
 
 
 
@@ -492,9 +637,20 @@ a {
   color: white;
   font-size: 4vmin;
 }
+.flex-container-e{
+  padding: 2%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  
+}
 
 
-@media only screen and (min-width: 1080px) {
+
+
+@media only screen and (min-width: 900px) {
   .flex-container{
     padding: 2%;
     list-style: none;
@@ -502,6 +658,16 @@ a {
     justify-content: flex-start;
     justify-content: space-between;
     
+  }
+  .clouds{
+    position: absolute;
+    background-image: url(./images/clouds.png);
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 50%;
+    animation: cloudsMove 25s infinite linear;
   }
 
 

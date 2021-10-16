@@ -22,12 +22,13 @@ import nodejs from './images/nodejs.png';
 import reactpng from './images/reactpng.png';
 import ig from './images/ig.png';
 import linkedin from './images/linkedin.png';
-import github from './images/github.png';
+import github from './images/github.jpg';
 import grocerrystorevid from './images/grocerrystore.mp4';
 import play from './images/unnamed.png';
 import blogvid from './images/blogvid.mp4';
 import dealershipAPI from './images/dealershipAPI.mp4';
 import cashierApp from './images/cashierApp.mp4';
+import audi from './images/audi.jpg'
 
 
 
@@ -56,7 +57,8 @@ export{
   play,
   blogvid,
   dealershipAPI,
-  cashierApp
+  cashierApp,
+  audi
 };
 
 ReactDOM.render(
