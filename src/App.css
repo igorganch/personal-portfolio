@@ -204,17 +204,8 @@ border:none;
   
 }
 
-.clouds{
-  position: absolute;
-  background-repeat: no-repeat;
-  background-image: url(./images/clouds.png);
-  background-size: contain;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  opacity: 50%;
-  animation: cloudsMove 25s infinite linear;
-}
+
+
 
 
 @keyframes cloudsMove {
@@ -646,7 +637,91 @@ a {
   align-items: center;
   
 }
+@media only screen and (max-width: 826px) {
+  .clouds{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(./images/clouds.png);
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 50%;
+    animation: cloudsMove 25s infinite linear;
+  }
+  .clouds2{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(./images/clouds.png);
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 50%;
+    margin-top: 15%;
+    animation: cloudsMove 25s infinite linear;
+    animation-delay: 10s;
+    margin-left: -500px;
+  }
+  .clouds3{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(./images/clouds.png);
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 50%;
+    margin-top: 35%;
+    animation: cloudsMove 25s infinite linear;
+    animation-delay: 15s;
+    margin-left: -500px;
+  }
 
+  .clouds4{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(./images/clouds.png);
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 50%;
+    margin-top: 75%;
+    animation: cloudsMove 25s infinite linear;
+    animation-delay: 7s;
+    margin-left: -500px;
+  }
+
+  .clouds5{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(./images/clouds.png);
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 50%;
+    margin-top: 95%;
+    animation: cloudsMove 25s infinite linear;
+    animation-delay: 10s;
+    margin-left: -500px;
+  }
+  
+  
+
+
+  @keyframes cloudsMove {
+    0% {
+      margin-left: -500px;
+  }
+  100% {
+      margin-left: 100%;
+  }
+}
+  
+  
+}
 
 
 
@@ -669,6 +744,45 @@ a {
     opacity: 50%;
     animation: cloudsMove 25s infinite linear;
   }
+
+  .clouds2{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(./images/clouds.png);
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 50%;
+    margin-top: 10%;
+    animation: cloudsMove 25s infinite linear;
+    animation-delay: 9s;
+    margin-left: -1920px;
+  }
+  .clouds3{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(./images/clouds.png);
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 50%;
+    margin-bottom: 30%;
+    animation: cloudsMove 25s infinite linear;
+    animation-delay: 7s;
+    margin-left: -1920px;
+  }
+  
+@keyframes cloudsMove {
+  0% {
+    margin-left: -1920px;
+}
+100% {
+    margin-left: 100%;
+}
+  
+}
 
 
 

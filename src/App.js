@@ -28,7 +28,8 @@ import { bootstrappng,css,django,hmtl,jq,js,postgresql,PS, python,
   blogvid,
   dealershipAPI,
   cashierApp,
-  audi
+  audi,
+ 
 
  } from './index.js';
 import { useState } from 'react';
@@ -222,6 +223,8 @@ function App() {
           <div className = "clouds"></div>
           <div className = "clouds2"></div>
           <div className = "clouds3"></div>
+          <div className = "clouds4"></div>
+          <div className = "clouds5"></div>
 
         </div>
 

@@ -28,7 +28,7 @@ import play from './images/unnamed.png';
 import blogvid from './images/blogvid.mp4';
 import dealershipAPI from './images/dealershipAPI.mp4';
 import cashierApp from './images/cashierApp.mp4';
-import audi from './images/audi.jpg'
+import audi from './images/audi.jpg';
 
 
 
@@ -58,7 +58,8 @@ export{
   blogvid,
   dealershipAPI,
   cashierApp,
-  audi
+  audi,
+
 };
 
 ReactDOM.render(
