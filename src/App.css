@@ -27,22 +27,17 @@ html{
 
 }
 
+
+.skillsChart{}
 .skillsBox{
-   
-      height: 75%;
-      width: 60%;
-
-      
-
-      margin: 0 auto;
-      
-
-
+  width: 60%;
+  margin: 0 auto;                                             
 }
 
+
 .home {
-	background: linear-gradient(90deg, #d65db1, #ff6f91, #ff9671 , #ffc75f);
-	background-size: 400% 400%;
+	background: linear-gradient(90deg,#000428, #004e92);
+	background-size:500% 500%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
   display: flex;
@@ -51,9 +46,15 @@ html{
   font-family: 'Lato', sans-serif;
   
 }
-
+.skills-item{
+  height: 6vmin;
+}
 .skillsChart{
   width: 100%;
+  height: 100%;
+
+
+
   
 }
 
@@ -125,6 +126,7 @@ html{
   flex-flow: row wrap;
   column-gap: 1%;
   padding-bottom: 5% ;
+  
 
   
 }
@@ -187,7 +189,12 @@ html{
 
 button.invis{
 background:none; 
+height: auto;
+width: auto;
 border:none;
+z-index: 1;
+font-family: 'Lato', sans-serif;
+color: white;
 }
 .blackObj{
 
@@ -484,6 +491,12 @@ margin: 0 auto;
   box-sizing: border-box;
   animation: draw-borders-bottom-left 4s forwards;
 }
+a {
+  text-decoration:none !important;
+}
+.setCarouselHeight{
+  height: 70%;
+}
 
 @keyframes draw-borders-top-right {
   0% {
@@ -551,18 +564,6 @@ margin: 0 auto;
 }
 
 
-@keyframes FadeIn { 
-  0% {
-    transform: scaleY(0);
-  }
-
-  85% {
-    transform: scaleY(1.05);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
 
 .exp{
   width: 100%;
@@ -571,17 +572,11 @@ margin: 0 auto;
   justify-content: center;
   flex-flow:row wrap;
 }
-a {
-  text-decoration: none;
-}
-.exp p {
 
-  transform-origin: left top;
-  animation: FadeIn 1s ease-in-out;
-  animation-fill-mode: both;
-  animation-delay: 4s 
+body [data-aos-delay='3500'][data-aos].aos-animate,
+[data-aos][data-aos][data-aos-delay='3500'].aos-animate {
+    transition-delay: 3.6s;
 }
-
 
 
 
@@ -597,6 +592,12 @@ a {
 
 
 }
+
+a[ id= "aboutMe" ]:target ~ div.aboutPage {
+  -webkit-transform: translateY( -500px);
+  transform: translateY( -500px );
+}
+
 @keyframes appearing{
   from{
 
@@ -634,7 +635,9 @@ a {
   display: flex;
   justify-content: flex-start;
   justify-content: space-between;
+
   align-items: center;
+  text-align:center;
   
 }
 @media only screen and (max-width: 826px) {
@@ -704,7 +707,22 @@ a {
     opacity: 50%;
     margin-top: 95%;
     animation: cloudsMove 25s infinite linear;
-    animation-delay: 10s;
+    animation-delay: 16s;
+    margin-left: -500px;
+  }
+
+  .clouds5{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url(./images/clouds.png);
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 50%;
+    margin-top: 100%;
+    animation: cloudsMove 25s infinite linear;
+    animation-delay: 20s;
     margin-left: -500px;
   }
   

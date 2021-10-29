@@ -1,9 +1,11 @@
 import logo from './logo.svg';
-import ReactDOM from "react-dom";
+import ReactDOM, { render } from "react-dom";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 import { Container, Row, Col, Card, Table, Button, Badge} from 'react-bootstrap';
 
 
@@ -33,56 +35,132 @@ import { bootstrappng,css,django,hmtl,jq,js,postgresql,PS, python,
 
  } from './index.js';
 import { useState } from 'react';
+import { useEffect } from 'react';
 
-function App() {
 
+function Skill(props){
+  useEffect(()=>{
+    AOS.init();
+  });
+  
+  return(
+    <div class ="skillsBox">
+    
+    {props.skills.map((skill)=> 
+    <div key = {skill.name} className ="skillsChart">
+      <hr className ="conHeaderLine"/>
+      <div data-aos="zoom-in" className ="flex-container-e skills-item">
+          <div className = "flex-item">
+          <img className = "zoom images"src={skill.image} />
+
+          </div>
+
+          <div className = "flex-item">
+              <p className = "skillsP">{skill.name}</p>
+          </div>
+
+          <div className = "flex-item">
+              <p className = "skillsP">{skill.experience}</p>
+          </div>
+
+      </div>
+      
+     
+    </div>
+    )}
+     <hr className ="conHeaderLine"/>
+    </div>
+
+    
+  );
+
+
+
+}
+
+
+function Skills(props) {
   const frontEnd = "frontEnd";
   const backEnd = "backEnd";
   const fullStack = "fullStack";
   const other ="other";
-  const selectedCategory = frontEnd;
+  let [category,selectedCategory] = useState(props.category);
+  const [skillArray,setSkillArray] =useState([]);
+
+  const [skills, skillsSets] = useState([
+    { 'name'  : "JavaScript"  , 'image'   : js, "category" : fullStack, "experience" : "3 Year Experience" },
+    { 'name'  : "Django"  , 'image'   : django, "category" : fullStack, "experience" : "1 Year Experience" },
+    { 'name'  : "React.js"  , 'image'   : angular, "category" : frontEnd, "experience" : "1.5 Year Experience" },
+    { 'name'  : "Angular"  , 'image'   : angular, "category" : frontEnd, "experience" : "1.5 Year Experience" },
+    { 'name'  : "CSS"  , 'image'   : css, "category" : frontEnd, "experience" : "3 Year Experience" },
+    { 'name'  : "JQuery"  , 'image'   : jq, "category" : frontEnd, "experience" : "3 Year Experience" },
+    { 'name'  : "HTML5"  , 'image'   : hmtl, "category" : frontEnd, "experience" : "3 Year Experience" },
+    { 'name'  : "Bootstrap"  , 'image'   : bootstrappng, "category" : frontEnd, "experience" : "3 Year Experience" },
+    { 'name'  : "C++"  , 'image'   : cplusspluss, "category" : backEnd, "experience" : "3 Year Experience" },
+    { 'name'  : "C#"  , 'image'   : csharp, "category" : backEnd, "experience" : "1 Year Experience" },
+    { 'name'  : "C"  , 'image'   : c, "category" : backEnd, "experience" : "4 Year Experience" },
+    { 'name'  : "Python"  , 'image'   : python, "category" : backEnd, "experience" : "1 Year Experience" },
+    { 'name'  : "Java"  , 'image'   : java, "category" :  backEnd, "experience" : "2 Year Experience"},
+    { 'name'  : "node.js"  , 'image'   : nodejs, "category" : backEnd, "experience" : "2.5 Year Experience" },
+    { 'name'  : "SQL"  , 'image'   : mongo, "category" : other , "experience" : "3 Year Experience"},
+    { 'name'  : "MongoDB"  , 'image'   : mongo, "category" : other, "experience" : "2 Year Experience" },
+    { 'name'  : "PostgreSQL"  , 'image'   : postgresql, "category" : other, "experience" : "2 Year Experience" },
+    { 'name'  : "Adobe Photoshop"  , 'image'   : PS, "category" : other , "experience" : "1 Year Experience"},
+    { 'name'  : "OpenGL"  , 'image'   : PS, "category" : other, "experience" : "1 Year Experience" },
 
 
-  function checkSkillType(skill){
-    
-    if((skills).localeCompare(selectedCategory)  ){
-      console.log(skill);
-      return true;
-      
+]) 
 
-    }
-    else{
-      console.log(skill+ "blyat");
-      return false;
-    }
+
+if (skillArray.length !== 0){
+  let i =0; 
+  let size = skillArray.length;
+  while (i < size){
+    skillArray.pop();
+    i++;
+  }
+
+}
+
+
+for ( let i = 0 ; i < skills.length; i++){
+  if(props.category === skills[i].category){
+    skillArray.push(skills[i]);
+    console.log(skills[i].name);
+  }
+
+}
+
+return (
+
+  <Skill skills = {skillArray}/>
+
+);
+}
+
+function App() {
+  useEffect(()=>{
+    AOS.init();
+  });
+  const frontEnd = "frontEnd";
+  const backEnd = "backEnd";
+  const fullStack = "fullStack";
+  const other ="other";
+  const [category,selectedCategory] = useState(frontEnd);
+
+
+  function checkCategroy(){
+    console.log(category);
 
 
   }
 
 
-  const [skills, skillsSets] = useState([
-        { 'name'  : "JavaScript"  , 'image'   : js, "category" : fullStack, "experience" : "3 Year Experience" },
-        { 'name'  : "Django"  , 'image'   : django, "category" : fullStack, "experience" : "1 Year Experience" },
-        { 'name'  : "React.js"  , 'image'   : reactpng, "category" : frontEnd, "experience" : "1.5 Year Experience" },
-        { 'name'  : "Angular"  , 'image'   : angular, "category" : frontEnd, "experience" : "1.5 Year Experience" },
-        { 'name'  : "CSS"  , 'image'   : css, "category" : frontEnd, "experience" : "3 Year Experience" },
-        { 'name'  : "JQuery"  , 'image'   : jq, "category" : frontEnd, "experience" : "3 Year Experience" },
-        { 'name'  : "HTML5"  , 'image'   : hmtl, "category" : frontEnd, "experience" : "3 Year Experience" },
-        { 'name'  : "Bootstrap"  , 'image'   : bootstrappng, "category" : frontEnd, "experience" : "3 Year Experience" },
-        { 'name'  : "C++"  , 'image'   : cplusspluss, "category" : backEnd, "experience" : "3 Year Experience" },
-        { 'name'  : "C#"  , 'image'   : csharp, "category" : backEnd, "experience" : "1 Year Experience" },
-        { 'name'  : "C"  , 'image'   : c, "category" : backEnd, "experience" : "4 Year Experience" },
-        { 'name'  : "Python"  , 'image'   : python, "category" : backEnd, "experience" : "1 Year Experience" },
-        { 'name'  : "Java"  , 'image'   : java, "category" :  backEnd, "experience" : "2 Year Experience"},
-        { 'name'  : "node.js"  , 'image'   : nodejs, "category" : backEnd, "experience" : "2.5 Year Experience" },
-        { 'name'  : "SQL"  , 'image'   : mongo, "category" : other , "experience" : "3 Year Experience"},
-        { 'name'  : "MongoDB"  , 'image'   : mongo, "category" : other, "experience" : "2 Year Experience" },
-        { 'name'  : "PostgreSQL"  , 'image'   : postgresql, "category" : other, "experience" : "2 Year Experience" },
-        { 'name'  : "Adobe Photoshop"  , 'image'   : PS, "category" : other , "experience" : "1 Year Experience"},
-        { 'name'  : "OpenGL"  , 'image'   : PS, "category" : other, "experience" : "1 Year Experience" },
 
 
-  ]) 
+
+
+
 
   const [projects, projectSets]  = useState([
       {'name' : 'E-commerce Website', 'video' : grocerrystorevid,  'live' : true , 'tools' : ['Django' ,'Python' ,'JavaScript', 'JQuery', 'PostgreSQL','HTML5', 'CSS', 'Bootstrap'], 'github' : "https://github.com/igorganch/Groccery-Store-Website" ,  'liveurl' : "https://grocerystoreiharproject.herokuapp.com/",   'desc'  : "An e-commerce grocery store where a use is  able to browse through the websites products as well as add items to carts and do guest checkout. " },
@@ -115,6 +193,11 @@ function App() {
       items: 1 ,
     }
   };
+   function aboutMeClick(event){
+    event.preventDefault();
+
+
+  }
 
 
   return (
@@ -131,18 +214,18 @@ function App() {
           
           <div className ="exp">
             <Row className="menuOptions ">
-              <Col className= "equal text-center">
-                <p className = "expand aboutMe">About&nbsp; Me</p>
+              <Col data-aos="fade-down" data-aos-delay="3500" className= "equal text-center">
+                <a onClick ={aboutMeClick} href = "#aboutMe" className = "expand ">About&nbsp; Me</a>
               </Col>
 
-              <Col className= "equal text-center">
+              <Col  data-aos="fade-down" data-aos-delay="400"className= "equal text-center">
              <p className = "expand mySkills">My&nbsp; skills</p>
               </Col>
 
-              <Col className= "equal text-center">
+              <Col  data-aos="fade-down" data-aos-delay="600" className= "equal text-center">
               <p className = "expand myQualif">Projects</p>
               </Col>
-              <Col className= "equal text-center">
+              <Col  data-aos="fade-down" data-aos-delay="1000" className= "equal text-center">
               <p className = "expand myQualif">Contact</p>
               </Col>
             </Row>
@@ -225,7 +308,7 @@ function App() {
           <div className = "clouds3"></div>
           <div className = "clouds4"></div>
           <div className = "clouds5"></div>
-
+                                                 
         </div>
 
         <div className = "skills">
@@ -255,54 +338,29 @@ function App() {
             <Row className = "navItems">
 
             <Col className= "equal text-center">
-              <button className="invis"><p className = "fullStack">Full Stack</p></button>
+              <button value = {fullStack} onClick={() => selectedCategory(fullStack)} className="invis">Full Stack</button>
               </Col>
 
 
               <Col className= "equal text-center">
-              <button className="invis"><p className = "frontEnd">Front End</p></button>
+              <button value = {frontEnd} onClick={() => selectedCategory(frontEnd)} className="invis">Front End</button>
               </Col>
 
               <Col className= "equal text-center">
-              <button className="invis"><p className = "backEnd">Back End</p></button>
-              </Col>
-              <Col className= "equal text-center">
-              <button className="invis"><p className = "backEnd">Langauges</p></button>
+              <button value = {backEnd} onClick={() => selectedCategory(backEnd)} className="invis">Back End</button>
               </Col>
 
               <Col className= "equal text-center">
-              <button className="invis"><p className = "other">Other</p></button>
+              <button className="invis" onClick={() => selectedCategory(other)}  ><p className = "other">Other</p></button>
               </Col>
 
             </Row>
           </Container>
           
 
-          <div class ="skillsBox">
-          <hr className ="conHeaderLine"/>
-
-          {skills.map((skill)=> 
-  
-            <div className ="skillsChart">
-              
-              <div className ="flex-container-e skills-item">
-                  <div className = "flex-item">
-                  <img className = "zoom images"src={skill.image} />
-
-                  </div>
-
-                  <div className = "flex-item">
-                      <p className = "skillsP">{skill.name}</p>
-                  </div>
-
-                  <div className = "flex-item">
-                      <p className = "skillsP">{skill.experience}</p>
-                  </div>
-
-              </div>
-              <hr className ="conHeaderLine"/>
-            </div>
-            )}
+          
+          <Skills category = {category}/>
+          
 
 
 
@@ -310,7 +368,7 @@ function App() {
           
 
 
-          </div>
+          
 
 
 
@@ -351,12 +409,13 @@ function App() {
           <div   style={{
     paddingBottom: '30px',
     position: 'relative',
-    top: "10%"
+    top: "10%",
+
   
   
   }}>
 
-        <Carousel   removeArrowOnDeviceType={["tablet", "mobile"]}  responsive={responsive} showDots ={true}     renderButtonGroupOutside={false}
+        <Carousel  class="setCarouselHeight" removeArrowOnDeviceType={["tablet", "mobile"]}  responsive={responsive} showDots ={true}     renderButtonGroupOutside={false}
     renderDotsOutside  >
        
             {projects.map((project) => 
