@@ -7,8 +7,9 @@ import 'react-multi-carousel/lib/styles.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import { Container, Row, Col, Card, Table, Button, Badge} from 'react-bootstrap';
-
-
+import {Link} from 'react-scroll';
+import reactsvg from './logo.svg';
+import resume from "./IGANCHARENKA-RESUME.docx"
 
 import Hello from './Hello.js'
 import Cards from './Cards';
@@ -27,11 +28,13 @@ import { bootstrappng,css,django,hmtl,jq,js,postgresql,PS, python,
   github,
   grocerrystorevid,
   play,
+  sql,
   blogvid,
   dealershipAPI,
   cashierApp,
   audi,
- 
+  opengl,
+
 
  } from './index.js';
 import { useState } from 'react';
@@ -90,7 +93,7 @@ function Skills(props) {
   const [skills, skillsSets] = useState([
     { 'name'  : "JavaScript"  , 'image'   : js, "category" : fullStack, "experience" : "3 Year Experience" },
     { 'name'  : "Django"  , 'image'   : django, "category" : fullStack, "experience" : "1 Year Experience" },
-    { 'name'  : "React.js"  , 'image'   : angular, "category" : frontEnd, "experience" : "1.5 Year Experience" },
+    { 'name'  : "React.js"  , 'image'   : reactpng, "category" : frontEnd, "experience" : "1.5 Year Experience" },
     { 'name'  : "Angular"  , 'image'   : angular, "category" : frontEnd, "experience" : "1.5 Year Experience" },
     { 'name'  : "CSS"  , 'image'   : css, "category" : frontEnd, "experience" : "3 Year Experience" },
     { 'name'  : "JQuery"  , 'image'   : jq, "category" : frontEnd, "experience" : "3 Year Experience" },
@@ -102,11 +105,11 @@ function Skills(props) {
     { 'name'  : "Python"  , 'image'   : python, "category" : backEnd, "experience" : "1 Year Experience" },
     { 'name'  : "Java"  , 'image'   : java, "category" :  backEnd, "experience" : "2 Year Experience"},
     { 'name'  : "node.js"  , 'image'   : nodejs, "category" : backEnd, "experience" : "2.5 Year Experience" },
-    { 'name'  : "SQL"  , 'image'   : mongo, "category" : other , "experience" : "3 Year Experience"},
+    { 'name'  : "SQL"  , 'image'   : sql, "category" : other , "experience" : "3 Year Experience"},
     { 'name'  : "MongoDB"  , 'image'   : mongo, "category" : other, "experience" : "2 Year Experience" },
     { 'name'  : "PostgreSQL"  , 'image'   : postgresql, "category" : other, "experience" : "2 Year Experience" },
     { 'name'  : "Adobe Photoshop"  , 'image'   : PS, "category" : other , "experience" : "1 Year Experience"},
-    { 'name'  : "OpenGL"  , 'image'   : PS, "category" : other, "experience" : "1 Year Experience" },
+    { 'name'  : "OpenGL"  , 'image'   : opengl, "category" : other, "experience" : "1 Year Experience" },
 
 
 ]) 
@@ -186,7 +189,7 @@ function App() {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items:  2, 
+      items:  1, 
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -214,24 +217,23 @@ function App() {
           
           <div className ="exp">
             <Row className="menuOptions ">
-              <Col data-aos="fade-down" data-aos-delay="3500" className= "equal text-center">
-                <a onClick ={aboutMeClick} href = "#aboutMe" className = "expand ">About&nbsp; Me</a>
+              <Col className= "equal text-center">
+              <p className = "expand aboutHome"><Link to ="aboutPage" >About </Link></p>
               </Col>
 
-              <Col  data-aos="fade-down" data-aos-delay="400"className= "equal text-center">
-             <p className = "expand mySkills">My&nbsp; skills</p>
+              <Col className= "equal text-center">
+             <p className = "expand skillsHome"><Link to ="skillsPage" >My&nbsp; skills</Link></p>
               </Col>
 
-              <Col  data-aos="fade-down" data-aos-delay="600" className= "equal text-center">
-              <p className = "expand myQualif">Projects</p>
+              <Col   className= "equal text-center">
+              <p className = "expand projHome"><Link to ="projectsPage" >Projects</Link></p>
               </Col>
-              <Col  data-aos="fade-down" data-aos-delay="1000" className= "equal text-center">
-              <p className = "expand myQualif">Contact</p>
+              <Col   className= "equal text-center">
+              <p className = "expand contHome"><Link to ="contactPage" >Contact </Link></p>
               </Col>
             </Row>
           </div>
         </Container>  
-
           
    
 
@@ -243,7 +245,7 @@ function App() {
     
       
     
-        <div className = "aboutPage" >
+        <div id = "aboutPage"className = "aboutPage" >
 
 
 
@@ -251,15 +253,15 @@ function App() {
           <Container className = "navigationBar">
             <Row className = "navItems">
               <Col className= "equal text-center">
-                <p className = "aboutMe">About&nbsp; Me</p>
+                <p className = "aboutMe"><Link to ="skillsPage" >My&nbsp; skills</Link></p>
               </Col>
 
               <Col className= "equal text-center">
-             <p className = "mySkills">My&nbsp; skills</p>
+             <p className = "mySkills"><Link to ="projectsPage" >Projects</Link></p>
               </Col>
 
               <Col className= "equal text-center">
-              <p className = "myQualif">Projects</p>
+              <p className = "cont"><Link to ="contactPage" >Contact </Link></p>
               </Col>
 
             </Row>
@@ -281,13 +283,13 @@ function App() {
           <div className ="imgAvatar">
           <div className ="flex-container-e">
             <div className = "flex-item">
-                <img className = "zoom images" src ={ig}></img>
+            <a href="https://www.instagram.com/igor.ganch/"><img className = "zoom images" src ={ig}></img></a>
             </div>
             <div className = "flex-item">
-                <img className = "zoom images" src ={linkedin}></img>
+                <a href="https://www.linkedin.com/in/ihar-gancharenka-a22823207/"><img className = "zoom images" src ={linkedin}></img></a>
             </div>
             <div className = "flex-item">
-                <img className = "zoom images" src ={github}></img>
+            <a href="https://github.com/igorganch"><img className = "zoom images" src ={github}></img></a>
             </div> 
             </div>
             <hr className = "conHeaderLine"></hr>
@@ -311,19 +313,20 @@ function App() {
                                                  
         </div>
 
-        <div className = "skills">
+        <div id="skillsPage" className = "skills">
+        <div className ="pushToFronttwo">
         <Container className = "navigationBar">
             <Row className = "navItems">
               <Col className= "equal text-center">
-                <p className = "aboutMe">About&nbsp; Me</p>
+                <p className = "aboutMe"><Link to ="aboutPage" >About </Link></p>
               </Col>
 
               <Col className= "equal text-center">
-             <p className = "mySkills">Projects</p>
+             <p className = "mySkills"><Link to ="projectsPage" >Projects</Link></p>
               </Col>
 
               <Col className= "equal text-center">
-              <p className = "myQualif">Contact</p>
+              <p className = "cont"><Link to ="contactPage" >Contact </Link></p>
               </Col>
 
             </Row>
@@ -351,7 +354,7 @@ function App() {
               </Col>
 
               <Col className= "equal text-center">
-              <button className="invis" onClick={() => selectedCategory(other)}  ><p className = "other">Other</p></button>
+              <button className="invis" onClick={() => selectedCategory(other)}  >Other</button>
               </Col>
 
             </Row>
@@ -375,24 +378,24 @@ function App() {
 
 
 
-
+          </div>
         </div>
 
 
 
-        <div className = "projects" >
+        <div id = "projectsPage"className = "projects" >
         <Container className = "navigationBar">
             <Row className = "navItems">
               <Col className= "equal text-center">
-                <p className = "aboutMe">About&nbsp; Me</p>
+                <p className = "aboutMe"><Link to ="aboutPage" >About </Link></p>
               </Col>
 
               <Col className= "equal text-center">
-             <p className = "mySkills">My&nbsp;Skills</p>
+             <p className = "mySkills"><Link to ="skillsPage" >My&nbsp; skills</Link></p>
               </Col>
 
               <Col className= "equal text-center">
-              <p className = "myQualif">Contact</p>
+              <p className = "cont"><Link to ="contactPage" >Contact</Link></p>
               </Col>
 
             </Row>
@@ -417,9 +420,9 @@ function App() {
 
         <Carousel  class="setCarouselHeight" removeArrowOnDeviceType={["tablet", "mobile"]}  responsive={responsive} showDots ={true}     renderButtonGroupOutside={false}
     renderDotsOutside  >
-       
+
             {projects.map((project) => 
-           
+                <div className="setCardSpacing">
                 <Card className = " projectCards bg-dark text-white zoom2" >
                 <video variant="top" loop onMouseOver={e => e.target.play()} onMouseLeave={e => e.target.pause()}  src={project.video}/>
                   <Card.Body>
@@ -449,10 +452,10 @@ function App() {
                   </Card.Body>
       
                 </Card>
-               
+               </div>
               
             )}
-        
+
             
 
  
@@ -461,20 +464,20 @@ function App() {
           
           </div> 
 
-          <div className = "contact" >
+          <div id= "contactPage"className = "contact" >
 
           <Container className = "navigationBar">
             <Row className = "navItems">
-              <Col className= "equal text-center">
-                <p className = "aboutMe">About&nbsp; Me</p>
+            <Col className= "equal text-center">
+                <p className = "aboutMe"><Link to ="aboutPage" >About </Link></p>
               </Col>
 
               <Col className= "equal text-center">
-             <p className = "mySkills">My&nbsp; skills</p>
+             <p className = "mySkills"><Link to ="skillsPage" >My&nbsp; skills</Link></p>
               </Col>
 
               <Col className= "equal text-center">
-              <p className = "myQualif">Projects</p>
+              <p className = "cont"><Link to ="projectsPage" >Projects</Link></p>
               </Col>
 
             </Row>
@@ -501,11 +504,17 @@ function App() {
           </div>
           <div className = "button-group">
             <div className ="flex-item">
-            <button className ="email">Send me an E-mail</button>
+            <a href = "mailto: igorganch1@gmail.com"><button className ="email">Send me an E-mail</button></a>
             </div>
             <div className ="flex-item">
-            <button className ="resume">Resume</button>
+            <a href ={resume} download="IGANCHARENKA-RESUME"> <button className ="resume">Resume</button></a>
             </div>
+          </div>
+          <div className ="last">
+     
+          <img src={reactsvg} className="App-logo" alt="logo" />
+          <p className="devWith">Developed with React.js</p>
+
           </div>
 
 

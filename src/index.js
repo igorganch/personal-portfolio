@@ -16,10 +16,11 @@ import  c from './images/c.png';
 import  cplusspluss from './images/cplusspluss.png';
 import  csharp from './images/csharp.png';
 import  java from './images/java.png';
-import  mongo from './images/mongo.png';
+import  mongo from './images/mongodb.png';
 import  angular from './images/angular.png';
 import nodejs from './images/nodejs.png';
-import reactpng from './images/reactpng.png';
+import sql from './images/sql.png';
+
 import ig from './images/ig.png';
 import linkedin from './images/linkedin.png';
 import github from './images/github.jpg';
@@ -28,7 +29,10 @@ import play from './images/unnamed.png';
 import blogvid from './images/blogvid.mp4';
 import dealershipAPI from './images/dealershipAPI.mp4';
 import cashierApp from './images/cashierApp.mp4';
-import audi from './images/audi.jpg';
+import audi from './images/audi.png';
+import reactpng from './images/logo512.png';
+import opengl from './images/opengl.png';
+
 
 
 
@@ -59,6 +63,8 @@ export{
   dealershipAPI,
   cashierApp,
   audi,
+  sql,
+  opengl
 
 };
 
