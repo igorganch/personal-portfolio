@@ -32,6 +32,10 @@ import cashierApp from './images/cashierApp.mp4';
 import audi from './images/audi.png';
 import reactpng from './images/logo512.png';
 import opengl from './images/opengl.png';
+import invvid from './images/inventoryManager.mp4';
+import threedvid from './images/3dgraphics.mp4';
+import cashc from './images/csharpcash.mp4';
+import tencubes from './images/tencubes.mp4';
 
 
 
@@ -64,7 +68,11 @@ export{
   cashierApp,
   audi,
   sql,
-  opengl
+  opengl,
+  invvid,
+  threedvid,
+  cashc,
+  tencubes
 
 };
 

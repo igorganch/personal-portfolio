@@ -28,12 +28,16 @@ import { bootstrappng,css,django,hmtl,jq,js,postgresql,PS, python,
   github,
   grocerrystorevid,
   play,
+  invvid,
   sql,
   blogvid,
   dealershipAPI,
   cashierApp,
   audi,
   opengl,
+  threedvid,
+  cashc,
+  tencubes
 
 
  } from './index.js';
@@ -171,10 +175,10 @@ function App() {
       {'name' : 'Dealership API', 'video' : dealershipAPI,  'live' : true ,'tools' : ['Node.js' , 'JavaScript', 'HTML5', 'Rest API'], 'github' : "https://github.com/igorganch/dealershipAPI" ,'liveurl' : "https://dealershipapi1.herokuapp.com/", 'desc'  : "This is a simple web app API which retrieves data from database and a user is abl to perform CRUD operations" },
       {'name' : 'Mobile Cashier App', 'video' : cashierApp,  'live' : true , 'tools' : ['Angular' , 'HTML', 'OOP', 'CSS'],'github' : "https://github.com/igorganch/Angular-Cashier-App" , 'liveurl' : "https://heuristic-shannon-eaaa58.netlify.app/", 'desc'  : "This an Angular Ionic mobile app that acts as a cash register which manages restocking, purchases, and purchase histories. " },
       {'name' : 'Connect 4', 'video' : '/url',  'live' : false ,'tools' : ['Java' , 'JavaFX', 'OOP'],'github' : "https://github.com/igorganch/Connect4" ,  'liveurl' : "", 'desc'  : "A 2 Player classic game of connect 4, in order to win a player must a-line 4 of their own red/yellow coloured circles either diagonally, horizontally or vertically." },
-      {'name' : 'Inventory Manager', 'video' : '/url',  'live' : false ,'tools' : ['C++' , 'OOP'],'github' : "https://github.com/igorganch/Inventory-Manager" ,  'liveurl' : "", 'desc'  : "This app serves a purpose of keeping track of orders, inventory, and items sold." },
-      {'name' : 'Mobile Cashier App C#', 'video' : '/url',  'live' : false , 'tools' : ['C#' , 'OOP', 'Xamrin.Forms'], 'github' : "https://github.com/igorganch/CashierApp" ,  'liveurl' : "", 'desc'  : "A mobile app that acts as a cash register which keeps track of items sold and also allows the user to restock items." },
-      {'name' : 'Computer Graphics 4 cubes', 'video' : '/url',  'live' : false ,'tools' : ['C++' , 'OpenGL'], 'github' : "https://github.com/igorganch/3DGraphics" ,  'liveurl' : "", 'desc'  : "This openGL app loads 4 cubes, where the user can assign different textures to the cubes aswell as differrent transformations. The user can also operate the camera using it as a first person perspective." },
-      {'name' : 'Computer Graphics 10 cubes', 'video' : '/url',  'live' : false ,'tools' : ['C++' , 'OpenGL'], 'github' : "https://github.com/igorganch/OpenGL10SquaresPerspective" ,  'liveurl' : "", 'desc'  : "This openGL app generates 10 squares, where you can change the camera perspective by zooming in/out and shifting view from left and right." }
+      {'name' : 'Inventory Manager', 'video' : invvid, 'live' : false ,'tools' : ['C++' , 'OOP'],'github' : "https://github.com/igorganch/Inventory-Manager" ,  'liveurl' : "", 'desc'  : "This app serves a purpose of keeping track of orders, inventory, and items sold." },
+      {'name' : 'Mobile Cashier App C#', 'video' : cashc,  'live' : false , 'tools' : ['C#' , 'OOP', 'Xamrin.Forms'], 'github' : "https://github.com/igorganch/CashierApp" ,  'liveurl' : "", 'desc'  : "A mobile app that acts as a cash register which keeps track of items sold and also allows the user to restock items." },
+      {'name' : 'Computer Graphics 4 cubes', 'video' : threedvid,  'live' : false ,'tools' : ['C++' , 'OpenGL'], 'github' : "https://github.com/igorganch/3DGraphics" ,  'liveurl' : "", 'desc'  : "This openGL app loads 4 cubes, where the user can assign different textures to the cubes aswell as differrent transformations. " },
+      {'name' : 'Computer Graphics 10 cubes', 'video' : tencubes,   'live' : false ,'tools' : ['C++' , 'OpenGL'], 'github' : "https://github.com/igorganch/OpenGL10SquaresPerspective" ,  'liveurl' : "", 'desc'  : "This openGL app generates 10 squares, where you can change the camera perspective by zooming in/out and shifting view from left and right." }
   ]);
 
   const responsive = {
@@ -274,8 +278,8 @@ function App() {
             <div>
               <div className ="descAbout">
                 <hr className = "conHeaderLine"></hr>
-                <p className ="contactDesc">Im a fullstack developer located in Ontario Canada in Toronto. <br></br><br></br>I have a crazy passion for coding, cars(german car enuthsiast) as well as lifting weights. 
-            During my spare time I love to learn and create apps using diffrent langauges and am currently looking for a position to contribute and expand my abilities in programming.</p>
+                <p className ="contactDesc">I'm a fullstack developer located in Canada, Ontario, Toronto. <br></br><br></br>I have a crazy passion for coding, cars(german car enuthsiast) as well as lifting weights. 
+            During my spare time I love to learn new software development tools and create apps for fun. and am currently looking for a position to contribute and expand my abilities in programming.</p>
               </div>
             </div>
           </div>
