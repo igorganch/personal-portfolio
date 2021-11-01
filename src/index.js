@@ -36,6 +36,7 @@ import invvid from './images/inventoryManager.mp4';
 import threedvid from './images/3dgraphics.mp4';
 import cashc from './images/csharpcash.mp4';
 import tencubes from './images/tencubes.mp4';
+import hangman from './images/hangman.mp4';
 
 
 
@@ -72,7 +73,8 @@ export{
   invvid,
   threedvid,
   cashc,
-  tencubes
+  tencubes,
+  hangman
 
 };
 

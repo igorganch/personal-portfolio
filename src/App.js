@@ -37,7 +37,8 @@ import { bootstrappng,css,django,hmtl,jq,js,postgresql,PS, python,
   opengl,
   threedvid,
   cashc,
-  tencubes
+  tencubes,
+  hangman
 
 
  } from './index.js';
@@ -172,13 +173,14 @@ function App() {
   const [projects, projectSets]  = useState([
       {'name' : 'E-commerce Website', 'video' : grocerrystorevid,  'live' : true , 'tools' : ['Django' ,'Python' ,'JavaScript', 'JQuery', 'PostgreSQL','HTML5', 'CSS', 'Bootstrap'], 'github' : "https://github.com/igorganch/Groccery-Store-Website" ,  'liveurl' : "https://grocerystoreiharproject.herokuapp.com/",   'desc'  : "An e-commerce grocery store where a use is  able to browse through the websites products as well as add items to carts and do guest checkout. " },
       {'name' : 'Blog website', 'video' :  blogvid,  'live' : true , 'tools' : ['Angular' , 'Bootstrap'],'github' : "https://github.com/igorganch/Blog-Website" ,'liveurl' : "https://inspiring-snyder-def874.netlify.app"  ,'desc'  : "A blog website where user's are able post, comment, and use hashtags. There is also an Admin section where the owner can edit and remove posts." },
-      {'name' : 'Dealership API', 'video' : dealershipAPI,  'live' : true ,'tools' : ['Node.js' , 'JavaScript', 'HTML5', 'Rest API'], 'github' : "https://github.com/igorganch/dealershipAPI" ,'liveurl' : "https://dealershipapi1.herokuapp.com/", 'desc'  : "This is a simple web app API which retrieves data from database and a user is abl to perform CRUD operations" },
+      {'name' : 'Dealership API', 'video' : dealershipAPI,  'live' : true ,'tools' : ['Node.js' , 'JavaScript', 'HTML5', 'Rest API'], 'github' : "https://github.com/igorganch/dealershipAPI" ,'liveurl' : "https://dealershipapi1.herokuapp.com/", 'desc'  : "This is a simple web app API which retrieves data from a database and a user is able to perform CRUD operations" },
       {'name' : 'Mobile Cashier App', 'video' : cashierApp,  'live' : true , 'tools' : ['Angular' , 'HTML', 'OOP', 'CSS'],'github' : "https://github.com/igorganch/Angular-Cashier-App" , 'liveurl' : "https://heuristic-shannon-eaaa58.netlify.app/", 'desc'  : "This an Angular Ionic mobile app that acts as a cash register which manages restocking, purchases, and purchase histories. " },
       {'name' : 'Connect 4', 'video' : '/url',  'live' : false ,'tools' : ['Java' , 'JavaFX', 'OOP'],'github' : "https://github.com/igorganch/Connect4" ,  'liveurl' : "", 'desc'  : "A 2 Player classic game of connect 4, in order to win a player must a-line 4 of their own red/yellow coloured circles either diagonally, horizontally or vertically." },
       {'name' : 'Inventory Manager', 'video' : invvid, 'live' : false ,'tools' : ['C++' , 'OOP'],'github' : "https://github.com/igorganch/Inventory-Manager" ,  'liveurl' : "", 'desc'  : "This app serves a purpose of keeping track of orders, inventory, and items sold." },
-      {'name' : 'Mobile Cashier App C#', 'video' : cashc,  'live' : false , 'tools' : ['C#' , 'OOP', 'Xamrin.Forms'], 'github' : "https://github.com/igorganch/CashierApp" ,  'liveurl' : "", 'desc'  : "A mobile app that acts as a cash register which keeps track of items sold and also allows the user to restock items." },
+      {'name' : 'Mobile Cashier App C#', 'video' : cashc,  'live' : false , 'tools' : ['C#' , 'OOP', 'Xamrin.Forms'], 'github' : "https://github.com/igorganch/CashierApp" ,  'liveurl' : "", 'desc'  : "A mobile app that acts as a cash register which keeps track of items sold and allows the user to restock items." },
       {'name' : 'Computer Graphics 4 cubes', 'video' : threedvid,  'live' : false ,'tools' : ['C++' , 'OpenGL'], 'github' : "https://github.com/igorganch/3DGraphics" ,  'liveurl' : "", 'desc'  : "This openGL app loads 4 cubes, where the user can assign different textures to the cubes aswell as differrent transformations. " },
-      {'name' : 'Computer Graphics 10 cubes', 'video' : tencubes,   'live' : false ,'tools' : ['C++' , 'OpenGL'], 'github' : "https://github.com/igorganch/OpenGL10SquaresPerspective" ,  'liveurl' : "", 'desc'  : "This openGL app generates 10 squares, where you can change the camera perspective by zooming in/out and shifting view from left and right." }
+      {'name' : 'Hangman', 'video' : hangman,   'live' : false ,'tools' : ['Python' , 'OOP', 'MongoDB'], 'github' : "https://github.com/igorganch/Hangman" ,  'liveurl' : "", 'desc'  : "This a simple game of hangman created using python which saves all the scores players have scored to the database." }     ,
+      {'name' : 'Computer Graphics 10 cubes', 'video' : tencubes,   'live' : false ,'tools' : ['C++' , 'OpenGL'], 'github' : "https://github.com/igorganch/OpenGL10SquaresPerspective" ,  'liveurl' : "", 'desc'  : "This openGL app generates 10 squares, where you can change the camera perspective by zooming in/out and shifting the view from left and right." }
   ]);
 
   const responsive = {
@@ -278,8 +280,8 @@ function App() {
             <div>
               <div className ="descAbout">
                 <hr className = "conHeaderLine"></hr>
-                <p className ="contactDesc">I'm a fullstack developer located in Canada, Ontario, Toronto. <br></br><br></br>I have a crazy passion for coding, cars(german car enuthsiast) as well as lifting weights. 
-            During my spare time I love to learn new software development tools and create apps for fun. and am currently looking for a position to contribute and expand my abilities in programming.</p>
+                <p className ="contactDesc">I'm a fullstack developer located in Toronto, Ontario, Canada. <br></br><br></br>I have a crazy passion for coding, cars(german car enuthsiast) as well as lifting weights. 
+            During my spare time I love to learn new software development tools and create apps for fun. I'm currently looking for a position to contribute and expand my abilities in programming.</p>
               </div>
             </div>
           </div>

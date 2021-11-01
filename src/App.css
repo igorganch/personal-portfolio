@@ -736,7 +736,7 @@ body [data-aos-delay='3500'][data-aos].aos-animate,
     width: 100%;
     z-index: 0;
     opacity: 50%;
-    animation: cloudsMove 25s infinite linear;
+    animation: cloudsMove 25s linear infinite;
   }
   .clouds2{
     position: absolute;
@@ -748,7 +748,7 @@ body [data-aos-delay='3500'][data-aos].aos-animate,
     z-index: 0;
     opacity: 50%;
     margin-top: 15%;
-    animation: cloudsMove 25s infinite linear;
+    animation: cloudsMove 25s linear infinite;
     animation-delay: 10s;
     margin-left: -500px;
   }
@@ -762,7 +762,7 @@ body [data-aos-delay='3500'][data-aos].aos-animate,
     z-index: 0;
     opacity: 50%;
     margin-top: 35%;
-    animation: cloudsMove 25s infinite linear;
+    animation: cloudsMove 25s linear infinite;
     animation-delay: 15s;
     margin-left: -500px;
   }
@@ -777,7 +777,7 @@ body [data-aos-delay='3500'][data-aos].aos-animate,
     z-index: 0;
     opacity: 50%;
     margin-top: 75%;
-    animation: cloudsMove 25s infinite linear;
+    animation: cloudsMove 25s linear infinite;
     animation-delay: 7s;
     margin-left: -500px;
   }
@@ -792,7 +792,7 @@ body [data-aos-delay='3500'][data-aos].aos-animate,
     z-index: 0;
     opacity: 50%;
     margin-top: 95%;
-    animation: cloudsMove 25s infinite linear;
+    animation: cloudsMove 25s linear infinite;
     animation-delay: 16s;
     margin-left: -500px;
   }
@@ -807,7 +807,7 @@ body [data-aos-delay='3500'][data-aos].aos-animate,
     z-index: 0;
     opacity: 50%;
     margin-top: 100%;
-    animation: cloudsMove 25s infinite linear;
+    animation: cloudsMove 25s linear infinite;
     animation-delay: 20s;
     margin-left: -500px;
   }
@@ -869,7 +869,7 @@ body [data-aos-delay='3500'][data-aos].aos-animate,
     width: 100%;
     z-index: 0;
     opacity: 50%;
-    animation: cloudsMove 25s infinite linear;
+    animation: cloudsMove 25s linear infinite;
   }
 
   .clouds2{
@@ -882,7 +882,7 @@ body [data-aos-delay='3500'][data-aos].aos-animate,
     z-index: 0;
     opacity: 50%;
     margin-top: 10%;
-    animation: cloudsMove 25s infinite linear;
+    animation: cloudsMove 25s linear infinite;
     animation-delay: 9s;
     margin-left: -1920px;
   }
@@ -896,7 +896,7 @@ body [data-aos-delay='3500'][data-aos].aos-animate,
     z-index: 0;
     opacity: 50%;
     margin-bottom: 30%;
-    animation: cloudsMove 25s infinite linear;
+    animation: cloudsMove 25s linear infinite;
     animation-delay: 7s;
     margin-left: -1920px;
   }
