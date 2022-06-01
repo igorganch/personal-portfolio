@@ -38,7 +38,11 @@ import { bootstrappng,css,django,hmtl,jq,js,postgresql,PS, python,
   threedvid,
   cashc,
   tencubes,
-  hangman
+  hangman,
+  ASPNET1,
+  ASPNET2,
+  NETCORE,
+  PHP
 
 
  } from './index.js';
@@ -59,7 +63,7 @@ function Skill(props){
       <hr className ="conHeaderLine"/>
       <div data-aos="zoom-in" className ="flex-container-e skills-item">
           <div className = "flex-item">
-          <img className = "zoom images"src={skill.image} />
+            <img className = "zoom images"src={skill.image} />
 
           </div>
 
@@ -104,19 +108,20 @@ function Skills(props) {
     { 'name'  : "JQuery"  , 'image'   : jq, "category" : frontEnd, "experience" : "3 Year Experience" },
     { 'name'  : "HTML5"  , 'image'   : hmtl, "category" : frontEnd, "experience" : "3 Year Experience" },
     { 'name'  : "Bootstrap"  , 'image'   : bootstrappng, "category" : frontEnd, "experience" : "3 Year Experience" },
-    { 'name'  : "C++"  , 'image'   : cplusspluss, "category" : backEnd, "experience" : "3 Year Experience" },
-    { 'name'  : "C#"  , 'image'   : csharp, "category" : backEnd, "experience" : "1 Year Experience" },
-    { 'name'  : "C"  , 'image'   : c, "category" : backEnd, "experience" : "4 Year Experience" },
-    { 'name'  : "Python"  , 'image'   : python, "category" : backEnd, "experience" : "1 Year Experience" },
-    { 'name'  : "Java"  , 'image'   : java, "category" :  backEnd, "experience" : "2 Year Experience"},
+    { 'name'  : "C++"  , 'image'   : cplusspluss, "category" : other, "experience" : "3 Year Experience" },
+    { 'name'  : "C#"  , 'image'   : csharp, "category" : other, "experience" : "1 Year Experience" },
+    { 'name'  : "C"  , 'image'   : c, "category" : other, "experience" : "4 Year Experience" },
+    { 'name'  : "Python"  , 'image'   : python, "category" : other, "experience" : "1 Year Experience" },
+    { 'name'  : "Java"  , 'image'   : java, "category" :  other, "experience" : "2 Year Experience"},
     { 'name'  : "node.js"  , 'image'   : nodejs, "category" : backEnd, "experience" : "2.5 Year Experience" },
     { 'name'  : "SQL"  , 'image'   : sql, "category" : other , "experience" : "3 Year Experience"},
-    { 'name'  : "MongoDB"  , 'image'   : mongo, "category" : other, "experience" : "2 Year Experience" },
-    { 'name'  : "PostgreSQL"  , 'image'   : postgresql, "category" : other, "experience" : "2 Year Experience" },
+    { 'name'  : "MongoDB"  , 'image'   : mongo, "category" : backEnd, "experience" : "2 Year Experience" },
+    { 'name'  : "PostgreSQL"  , 'image'   : postgresql, "category" : backEnd, "experience" : "2 Year Experience" },
     { 'name'  : "Adobe Photoshop"  , 'image'   : PS, "category" : other , "experience" : "1 Year Experience"},
     { 'name'  : "OpenGL"  , 'image'   : opengl, "category" : other, "experience" : "1 Year Experience" },
-
-
+    { 'name'  : "ASP.NET"  , 'image'   : ASPNET2, "category" : backEnd, "experience" : "1 Year Experience" },
+    { 'name'  : ".NET Core"  , 'image'   : NETCORE, "category" : backEnd, "experience" : "1 Year Experience" },
+    { 'name'  : "PHP"  , 'image'   : PHP, "category" : backEnd, "experience" : "0.5 Year Experience" }
 ]) 
 
 

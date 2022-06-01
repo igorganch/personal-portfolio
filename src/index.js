@@ -38,6 +38,12 @@ import cashc from './images/csharpcash.mp4';
 import tencubes from './images/tencubes.mp4';
 import hangman from './images/hangman.mp4';
 
+import ASPNET1 from './images/ASPNET1.png';
+import ASPNET2 from './images/ASPNET2.png';
+
+import NETCORE from './images/NETCORE.png';
+
+import PHP from './images/PHP.png'
 
 
 
@@ -74,7 +80,11 @@ export{
   threedvid,
   cashc,
   tencubes,
-  hangman
+  hangman,
+  NETCORE,
+  ASPNET1,
+  ASPNET2,
+  PHP
 
 };
 
