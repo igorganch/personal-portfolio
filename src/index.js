@@ -43,7 +43,9 @@ import ASPNET2 from './images/ASPNET2.png';
 
 import NETCORE from './images/NETCORE.png';
 
-import PHP from './images/PHP.png'
+import PHP from './images/PHP.png';
+import Kiuloper from './images/kiuloper.png';
+import EduTechnoz from './images/EduTechnoz.mp4'
 
 
 
@@ -84,7 +86,9 @@ export{
   NETCORE,
   ASPNET1,
   ASPNET2,
-  PHP
+  PHP,
+  Kiuloper,
+  EduTechnoz
 
 };
 

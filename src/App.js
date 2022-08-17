@@ -9,7 +9,8 @@ import 'aos/dist/aos.css'
 import { Container, Row, Col, Card, Table, Button, Badge} from 'react-bootstrap';
 import {Link} from 'react-scroll';
 import reactsvg from './logo.svg';
-import resume from "./IGANCHARENKA-RESUME.docx"
+import resume from "./IHARGANCHARENKA-RESUME.pdf"
+import Experience from "./Experience.js";
 
 import Hello from './Hello.js'
 import Cards from './Cards';
@@ -42,7 +43,8 @@ import { bootstrappng,css,django,hmtl,jq,js,postgresql,PS, python,
   ASPNET1,
   ASPNET2,
   NETCORE,
-  PHP
+  PHP,
+  EduTechnoz
 
 
  } from './index.js';
@@ -62,16 +64,16 @@ function Skill(props){
     <div key = {skill.name} className ="skillsChart">
       <hr className ="conHeaderLine"/>
       <div data-aos="zoom-in" className ="flex-container-e skills-item">
-          <div className = "flex-item">
+          <div className = "flex-item1">
             <img className = "zoom images"src={skill.image} />
 
           </div>
 
-          <div className = "flex-item">
+          <div className = "flex-item2">
               <p className = "skillsP">{skill.name}</p>
           </div>
 
-          <div className = "flex-item">
+          <div className = "flex-item3">
               <p className = "skillsP">{skill.experience}</p>
           </div>
 
@@ -177,6 +179,7 @@ function App() {
 
   const [projects, projectSets]  = useState([
       {'name' : 'E-commerce Website', 'video' : grocerrystorevid,  'live' : true , 'tools' : ['Django' ,'Python' ,'JavaScript', 'JQuery', 'PostgreSQL','HTML5', 'CSS', 'Bootstrap'], 'github' : "https://github.com/igorganch/Groccery-Store-Website" ,  'liveurl' : "https://grocerystoreiharproject.herokuapp.com/",   'desc'  : "An e-commerce grocery store where a use is  able to browse through the websites products as well as add items to carts and do guest checkout. " },
+      {'name' : 'EduTechnoz', 'video' : EduTechnoz,  'live' : true , 'tools' : ['React' ,'JavaScript', 'HTML5', 'CSS'], 'github' : "" ,  'liveurl' : "https://sample.edutechnoz.com/",   'desc'  : " This is a homepage for EduTechnoz which I had to create for a client while working for Kiuloper. It is responsive on every device." },
       {'name' : 'Blog website', 'video' :  blogvid,  'live' : true , 'tools' : ['Angular' , 'Bootstrap'],'github' : "https://github.com/igorganch/Blog-Website" ,'liveurl' : "https://inspiring-snyder-def874.netlify.app"  ,'desc'  : "A blog website where user's are able post, comment, and use hashtags. There is also an Admin section where the owner can edit and remove posts." },
       {'name' : 'Dealership API', 'video' : dealershipAPI,  'live' : true ,'tools' : ['Node.js' , 'JavaScript', 'HTML5', 'Rest API'], 'github' : "https://github.com/igorganch/dealershipAPI" ,'liveurl' : "https://dealershipapi1.herokuapp.com/", 'desc'  : "This is a simple web app API which retrieves data from a database and a user is able to perform CRUD operations" },
       {'name' : 'Mobile Cashier App', 'video' : cashierApp,  'live' : true , 'tools' : ['Angular' , 'HTML', 'OOP', 'CSS'],'github' : "https://github.com/igorganch/Angular-Cashier-App" , 'liveurl' : "https://heuristic-shannon-eaaa58.netlify.app/", 'desc'  : "This an Angular Ionic mobile app that acts as a cash register which manages restocking, purchases, and purchase histories. " },
@@ -231,9 +234,13 @@ function App() {
               <Col className= "equal text-center">
               <p className = "expand aboutHome"><Link to ="aboutPage" >About </Link></p>
               </Col>
+              
+              <Col className= "equal text-center">
+             <p className = "expand skillsHome"><Link to ="skillsPage" >Skills</Link></p>
+              </Col>
 
               <Col className= "equal text-center">
-             <p className = "expand skillsHome"><Link to ="skillsPage" >My&nbsp; skills</Link></p>
+             <p className = "expand expHome"><Link to ="experiencePage" >Experience</Link></p>
               </Col>
 
               <Col   className= "equal text-center">
@@ -265,6 +272,10 @@ function App() {
             <Row className = "navItems">
               <Col className= "equal text-center">
                 <p className = "aboutMe"><Link to ="skillsPage" >My&nbsp; skills</Link></p>
+              </Col>
+              
+              <Col className= "equal text-center">
+                <p className = "aboutMe"><Link to ="experiencePage" >Experience</Link></p>
               </Col>
 
               <Col className= "equal text-center">
@@ -333,6 +344,10 @@ function App() {
               </Col>
 
               <Col className= "equal text-center">
+                <p className = "aboutMe"><Link to ="experiencePage" >Experience</Link></p>
+              </Col>
+
+              <Col className= "equal text-center">
              <p className = "mySkills"><Link to ="projectsPage" >Projects</Link></p>
               </Col>
 
@@ -391,8 +406,10 @@ function App() {
 
           </div>
         </div>
-
-
+        <div id="experiencePage">
+        <Experience />
+        </div>
+       
 
         <div id = "projectsPage"className = "projects" >
         <Container className = "navigationBar">
@@ -403,6 +420,10 @@ function App() {
 
               <Col className= "equal text-center">
              <p className = "mySkills"><Link to ="skillsPage" >My&nbsp; skills</Link></p>
+              </Col>
+
+              <Col className= "equal text-center">
+                <p className = "aboutMe"><Link to ="experiencePage" >Experience</Link></p>
               </Col>
 
               <Col className= "equal text-center">
@@ -485,6 +506,10 @@ function App() {
 
               <Col className= "equal text-center">
              <p className = "mySkills"><Link to ="skillsPage" >My&nbsp; skills</Link></p>
+              </Col>
+
+              <Col className= "equal text-center">
+                <p className = "aboutMe"><Link to ="skillsPage" >Experience</Link></p>
               </Col>
 
               <Col className= "equal text-center">
