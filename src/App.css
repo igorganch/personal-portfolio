@@ -454,88 +454,23 @@ color: white;
 }
 .projHeaderLine1{
   width: 100%;
-  border: 1px solid white;
+  border: 0.5px solid white;
   margin: 0;
 
 }
-.FlexJob{
-  display:flex;
-  justify-content:space-between;
-  align-self: center;
-  width: 50%;
-  height: auto;
-
-  margin: 0 auto;
-  
-}
 
 
-.FlexSkillsExp1{
-  display:flex;
-  justify-content:space-between;
-  align-self: center;
-  width: 6%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  align-items: center;
 
 
-  
-}
-
-.FlexSkillsExp{
-  display:flex;
-  justify-content:space-between;
-  align-self: center;
-  width: 25%;
-  padding-top: 1%;
-  padding-bottom: 1%;
 
 
-  
-}
-.jobcentertext{
 
-height: auto;
-width:33%;
-text-align:start;
-font-size: calc(4vmin / 2);
-color: white;
-font-family: 'Lato', sans-serif;
-}
-.jobcentertext2{
-
-  height: auto;
-  width:33%;
-  text-align:center;
-  font-size: calc(4vmin / 2);
-  color: white;
-  font-family: 'Lato', sans-serif;
-  }
-  .jobcentertext3{
-
-    height: auto;
-    width:33%;
-    text-align:end;
-    font-size: calc(4vmin / 2);
-    color: white;
-    font-family: 'Lato', sans-serif;
-    }
-
-.jobDescriptiontext{
-  height: auto;
-  width:50%;
-  text-align:start;
-  font-size: calc(4vmin / 2);
-  color: white;
-  font-family: 'Lato', sans-serif;
-}
 
 .expHeaderLine{
 
 
                                
-  border: 1px solid white;
+  border: 0.5px solid white;
   margin : 0;
 
 }
@@ -553,11 +488,7 @@ font-family: 'Lato', sans-serif;
   width: 70%;
 }
 
-.menuOptions{
 
-
-
-}
 .myBox{
 
 margin: 0 auto;
@@ -631,10 +562,7 @@ margin: 0 auto;
   align-items: center;
   margin: 0 auto;
 }
-.menuOptions{
-  width: 75vmin;
-  
-}
+
 
 .drawing-borders {
   position: relative;
@@ -686,20 +614,22 @@ a {
 }
 
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 10px;
   border-radius: 10px;
+  opacity: 0.5;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
+  opacity: 1;
+  
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgb(119, 119, 119); 
-  border-radius: 10px;
+  
 }
 
 /* Handle on hover */
@@ -896,16 +826,7 @@ body [data-aos-delay='3500'][data-aos].aos-animate,
   margin: 0;
 
 }
-.sor{
-  height: auto;
-  width: 60%;
-  padding-bottom: 1%;
-}
-.sor1{
-  height: auto;
-  width: 50%;
-  padding-bottom: 1%;
-}
+
 .jobSkillExp{
   display: flex;
   flex-direction: column;
@@ -994,6 +915,15 @@ body [data-aos-delay='3500'][data-aos].aos-animate,
   
 }
 @media only screen and (max-width: 826px) {
+
+
+  .images1{
+    width: 7vmin;
+    height: 7vmin;
+  
+  
+  }
+
   .clouds{
     position: absolute;
     background-repeat: no-repeat;
@@ -1111,12 +1041,187 @@ body [data-aos-delay='3500'][data-aos].aos-animate,
   }
 }
   
+
+.sor{
+  height: auto;
+  width: 75%;
+  padding-bottom: 1%;
+}
+.sor1{
+  height: auto;
+  width: 65%;
+  padding-bottom: 1%;
+}
+
+.FlexJob{
+  display:flex;
+  justify-content:space-between;
+  align-self: center;
+  width: 65%;
+  height: auto;
+
+  margin: 0 auto;
   
+}
+
+.jobcentertext{
+
+  height: auto;
+  width:33%;
+  text-align:start;
+  font-size: calc(7vmin / 2);
+  color: white;
+  font-family: 'Lato', sans-serif;
+  }
+  .jobcentertext2{
+  
+    height: auto;
+    width:33%;
+    text-align:center;
+    font-size: calc(7vmin / 2);
+    color: white;
+    font-family: 'Lato', sans-serif;
+    }
+    .jobcentertext3{
+  
+      height: auto;
+      width:33%;
+      text-align:end;
+      font-size: calc(7vmin / 2);
+      color: white;
+      font-family: 'Lato', sans-serif;
+      }
+  
+
+      .jobDescriptiontext{
+        height: auto;
+        width:65%;
+        text-align:start;
+        font-size: calc(6vmin / 2);
+        color: white;
+        font-family: 'Lato', sans-serif;
+      }    
+
+      .FlexSkillsExp1{
+        display:flex;
+        justify-content:space-between;
+        align-self: center;
+        width: 15%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        align-items: center;
+      
+      
+        
+      }
+      
+      .FlexSkillsExp{
+        display:flex;
+        justify-content:space-between;
+        align-self: center;
+        width: 40%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+      
+      
+        
+      }
+
+      .menuOptions{
+        width: 85vmin;
+        
+      }
 }
 
 
 
 @media only screen and (min-width: 900px) {
+  .menuOptions{
+    width: 75vmin;
+    
+  }
+  .FlexSkillsExp1{
+    display:flex;
+    justify-content:space-between;
+    align-self: center;
+    width: 6%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    align-items: center;
+  
+  
+    
+  }
+  
+  .FlexSkillsExp{
+    display:flex;
+    justify-content:space-between;
+    align-self: center;
+    width: 25%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  
+  
+    
+  }
+
+  .jobDescriptiontext{
+    height: auto;
+    width:50%;
+    text-align:start;
+    font-size: calc(4vmin / 2);
+    color: white;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .jobcentertext{
+
+    height: auto;
+    width:33%;
+    text-align:start;
+    font-size: calc(4vmin / 2);
+    color: white;
+    font-family: 'Lato', sans-serif;
+    }
+    .jobcentertext2{
+    
+      height: auto;
+      width:33%;
+      text-align:center;
+      font-size: calc(4vmin / 2);
+      color: white;
+      font-family: 'Lato', sans-serif;
+      }
+      .jobcentertext3{
+    
+        height: auto;
+        width:33%;
+        text-align:end;
+        font-size: calc(4vmin / 2);
+        color: white;
+        font-family: 'Lato', sans-serif;
+        }
+
+  .FlexJob{
+    display:flex;
+    justify-content:space-between;
+    align-self: center;
+    width: 50%;
+    height: auto;
+  
+    margin: 0 auto;
+    
+  }
+  .sor{
+    height: auto;
+    width: 60%;
+    padding-bottom: 1%;
+  }
+  .sor1{
+    height: auto;
+    width: 50%;
+    padding-bottom: 1%;
+  }
 
 
   

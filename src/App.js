@@ -183,12 +183,13 @@ function App() {
       {'name' : 'Blog website', 'video' :  blogvid,  'live' : true , 'tools' : ['Angular' , 'Bootstrap'],'github' : "https://github.com/igorganch/Blog-Website" ,'liveurl' : "https://inspiring-snyder-def874.netlify.app"  ,'desc'  : "A blog website where user's are able post, comment, and use hashtags. There is also an Admin section where the owner can edit and remove posts." },
       {'name' : 'Dealership API', 'video' : dealershipAPI,  'live' : true ,'tools' : ['Node.js' , 'JavaScript', 'HTML5', 'Rest API'], 'github' : "https://github.com/igorganch/dealershipAPI" ,'liveurl' : "https://dealershipapi1.herokuapp.com/", 'desc'  : "This is a simple web app API which retrieves data from a database and a user is able to perform CRUD operations" },
       {'name' : 'Mobile Cashier App', 'video' : cashierApp,  'live' : true , 'tools' : ['Angular' , 'HTML', 'OOP', 'CSS'],'github' : "https://github.com/igorganch/Angular-Cashier-App" , 'liveurl' : "https://heuristic-shannon-eaaa58.netlify.app/", 'desc'  : "This an Angular Ionic mobile app that acts as a cash register which manages restocking, purchases, and purchase histories. " },
-      {'name' : 'Connect 4', 'video' : '/url',  'live' : false ,'tools' : ['Java' , 'JavaFX', 'OOP'],'github' : "https://github.com/igorganch/Connect4" ,  'liveurl' : "", 'desc'  : "A 2 Player classic game of connect 4, in order to win a player must a-line 4 of their own red/yellow coloured circles either diagonally, horizontally or vertically." },
       {'name' : 'Inventory Manager', 'video' : invvid, 'live' : false ,'tools' : ['C++' , 'OOP'],'github' : "https://github.com/igorganch/Inventory-Manager" ,  'liveurl' : "", 'desc'  : "This app serves a purpose of keeping track of orders, inventory, and items sold." },
       {'name' : 'Mobile Cashier App C#', 'video' : cashc,  'live' : false , 'tools' : ['C#' , 'OOP', 'Xamrin.Forms'], 'github' : "https://github.com/igorganch/CashierApp" ,  'liveurl' : "", 'desc'  : "A mobile app that acts as a cash register which keeps track of items sold and allows the user to restock items." },
       {'name' : 'Computer Graphics 4 cubes', 'video' : threedvid,  'live' : false ,'tools' : ['C++' , 'OpenGL'], 'github' : "https://github.com/igorganch/3DGraphics" ,  'liveurl' : "", 'desc'  : "This openGL app loads 4 cubes, where the user can assign different textures to the cubes aswell as differrent transformations. " },
       {'name' : 'Hangman', 'video' : hangman,   'live' : false ,'tools' : ['Python' , 'OOP', 'MongoDB'], 'github' : "https://github.com/igorganch/Hangman" ,  'liveurl' : "", 'desc'  : "This a simple game of hangman created using python which saves all the scores players have scored to the database." }     ,
-      {'name' : 'Computer Graphics 10 cubes', 'video' : tencubes,   'live' : false ,'tools' : ['C++' , 'OpenGL'], 'github' : "https://github.com/igorganch/OpenGL10SquaresPerspective" ,  'liveurl' : "", 'desc'  : "This openGL app generates 10 squares, where you can change the camera perspective by zooming in/out and shifting the view from left and right." }
+      {'name' : 'Computer Graphics 10 cubes', 'video' : tencubes,   'live' : false ,'tools' : ['C++' , 'OpenGL'], 'github' : "https://github.com/igorganch/OpenGL10SquaresPerspective" ,  'liveurl' : "", 'desc'  : "This openGL app generates 10 squares, where you can change the camera perspective by zooming in/out and shifting the view from left and right." },
+      {'name' : 'Connect 4', 'video' : '/url', 'video' : null, 'live' : false ,'tools' : ['Java' , 'JavaFX', 'OOP'],'github' : "https://github.com/igorganch/Connect4" ,  'liveurl' : "", 'desc'  : "A 2 Player classic game of connect 4, in order to win a player must a-line 4 of their own red/yellow coloured circles either diagonally, horizontally or vertically." },
+
   ]);
 
   const responsive = {
@@ -509,7 +510,7 @@ function App() {
               </Col>
 
               <Col className= "equal text-center">
-                <p className = "aboutMe"><Link to ="skillsPage" >Experience</Link></p>
+                <p className = "aboutMe"><Link to ="experiencePage" >Experience</Link></p>
               </Col>
 
               <Col className= "equal text-center">

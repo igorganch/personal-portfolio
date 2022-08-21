@@ -49,13 +49,15 @@ class Experience extends React.Component{
       var lines = document.querySelectorAll(".exphr");
       var addHeight = 0;
       expand[0].querySelector(".jobSkillExp").hidden = false;
+      var current =  expand[0];
       for (var i = 0; i < expand.length; i++) {
-        const cssMove = "position:absolute; transform: translateY(" + addHeight +"px);";
-        var heightStart = lines[0].clientHeight;
-        var heightEnd = lines[1].clientHeight;
-
-console.log("heightStart - " + heightStart);
-console.log("heightEnd - " + heightEnd);
+        var cssMove;
+        if(expand[i] != current){
+         cssMove = "position:absolute; transform: translateY(" + addHeight +"px); cursor: pointer;";
+        }
+        else{
+          cssMove = "position:absolute; transform: translateY(" + addHeight +"px); ";
+        }
 
 
 
@@ -63,6 +65,7 @@ console.log("heightEnd - " + heightEnd);
         console.log("addHeight-" + addHeight)
         expand[i].style.cssText += cssMove;
         expand[i].addEventListener("click", mouseOver);
+        expand[i].addEventListener("touchstart", mouseOver);
 
 
      }
@@ -82,7 +85,7 @@ console.log("heightEnd - " + heightEnd);
 
         for(var i = 0 ; i < expand.length; i++){
           expand[i].querySelector(".jobSkillExp").hidden = true;
-          const cssMove = "position:absolute; transform: translateY(" + addHeight_ +"px); transition: all ease 200ms;";
+          const cssMove = "position:absolute; transform: translateY(" + addHeight_ +"px); transition: all ease 200ms; cursor: pointer;";
           expand[i].style.cssText += cssMove;
           addHeight_ +=  expand[i].offsetHeight;
         }
@@ -90,6 +93,8 @@ console.log("heightEnd - " + heightEnd);
 
         for(var i = 0 ; i < expand.length; i++){
           if(expand[i] == e.currentTarget && tf == false ){
+            const cssMove = "cursor: default;";
+            expand[i].style.cssText += cssMove;
             console.log(addHeight_ + "inside 1st");
             choosen = expand[i];
             expand[i].querySelector(".jobSkillExp").hidden = false;
@@ -97,7 +102,7 @@ console.log("heightEnd - " + heightEnd);
             tf = true;
           }
           else{
-            const cssMove = "position:absolute; transform: translateY(" + addHeight_ +"px); transition: all ease 200ms;";
+            const cssMove = "position:absolute; transform: translateY(" + addHeight_ +"px); transition: all ease 200ms; cursor: pointer;";
             expand[i].style.cssText += cssMove;
             addHeight_ +=  expand[i].offsetHeight;
             console.log("addHeight-" + addHeight_)
