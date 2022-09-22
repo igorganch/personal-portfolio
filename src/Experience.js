@@ -72,12 +72,12 @@ class Experience extends React.Component{
      
      
       
-      var choosen = null; 
+      var choosen = expand[0]; 
       var defaultHeight = expand[0].offsetHeight;
 
       function mouseOver(e){
 
-        
+        if(e.currentTarget != choosen){
         console.log(e.currentTarget)
         var tf = false;
         var expand = document.querySelectorAll(".moveBackExperience");
@@ -111,6 +111,7 @@ class Experience extends React.Component{
           }
 
         }
+      }
 
         
       }
