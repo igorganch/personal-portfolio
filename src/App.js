@@ -123,7 +123,7 @@ function Skills(props) {
     { 'name'  : "OpenGL"  , 'image'   : opengl, "category" : other, "experience" : "1 Year Experience" },
     { 'name'  : "ASP.NET"  , 'image'   : ASPNET2, "category" : backEnd, "experience" : "1 Year Experience" },
     { 'name'  : ".NET Core"  , 'image'   : NETCORE, "category" : backEnd, "experience" : "1 Year Experience" },
-    { 'name'  : "PHP"  , 'image'   : PHP, "category" : backEnd, "experience" : "0.5 Year Experience" }
+    { 'name'  : "PHP"  , 'image'   : PHP, "category" : backEnd, "experience" : "2 Year Experience" }
 ]) 
 
 
