@@ -111,7 +111,7 @@ function Skills(props) {
     { 'name'  : "HTML5"  , 'image'   : hmtl, "category" : frontEnd, "experience" : "3 Year Experience" },
     { 'name'  : "Bootstrap"  , 'image'   : bootstrappng, "category" : frontEnd, "experience" : "3 Year Experience" },
     { 'name'  : "C++"  , 'image'   : cplusspluss, "category" : other, "experience" : "3 Year Experience" },
-    { 'name'  : "C#"  , 'image'   : csharp, "category" : other, "experience" : "1 Year Experience" },
+    { 'name'  : "C#"  , 'image'   : csharp, "category" : other, "experience" : "2 Year Experience" },
     { 'name'  : "C"  , 'image'   : c, "category" : other, "experience" : "4 Year Experience" },
     { 'name'  : "Python"  , 'image'   : python, "category" : other, "experience" : "1 Year Experience" },
     { 'name'  : "Java"  , 'image'   : java, "category" :  other, "experience" : "2 Year Experience"},
@@ -121,7 +121,7 @@ function Skills(props) {
     { 'name'  : "PostgreSQL"  , 'image'   : postgresql, "category" : backEnd, "experience" : "2 Year Experience" },
     { 'name'  : "Adobe Photoshop"  , 'image'   : PS, "category" : other , "experience" : "1 Year Experience"},
     { 'name'  : "OpenGL"  , 'image'   : opengl, "category" : other, "experience" : "1 Year Experience" },
-    { 'name'  : "ASP.NET"  , 'image'   : ASPNET2, "category" : backEnd, "experience" : "1 Year Experience" },
+    { 'name'  : "ASP.NET"  , 'image'   : ASPNET2, "category" : backEnd, "experience" : "2 Year Experience" },
     { 'name'  : ".NET Core"  , 'image'   : NETCORE, "category" : backEnd, "experience" : "1 Year Experience" },
     { 'name'  : "PHP"  , 'image'   : PHP, "category" : backEnd, "experience" : "2 Year Experience" }
 ]) 
