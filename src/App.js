@@ -48,7 +48,8 @@ import { bootstrappng,css,django,hmtl,jq,js,postgresql,PS, python,
   EduTechnoz,
   MusicManagementApp,
   springboot,
-  azure
+  azure,
+  aws
 
 
 
@@ -130,7 +131,8 @@ function Skills(props) {
     { 'name'  : "ASP.NET"  , 'image'   : ASPNET2, "category" : backEnd, "experience" : "2 Year Experience" },
     { 'name'  : ".NET Core"  , 'image'   : NETCORE, "category" : backEnd, "experience" : "1 Year Experience" },
     { 'name'  : "PHP"  , 'image'   : PHP, "category" : fullStack, "experience" : "2 Year Experience" },
-    { 'name'  : "Azure"  , 'image'   : azure, "category" : other, "experience" : "2 Year Experience" }
+    { 'name'  : "Azure"  , 'image'   : azure, "category" : other, "experience" : "2 Year Experience" },
+    { 'name'  : "AWS"  , 'image'   : aws, "category" : other, "experience" : "1 Year Experience" }
 ]) 
 
 
