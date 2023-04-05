@@ -48,6 +48,7 @@ import Kiuloper from './images/kiuloper.png';
 import EduTechnoz from './images/EduTechnoz.mp4';
 import MusicManagementApp from './images/MusicManagementApp.mp4';
 import springboot from './images/spring-boot.png';
+import azure from './images/azure.png';
 
 
 
@@ -93,6 +94,7 @@ export{
   EduTechnoz,
   MusicManagementApp,
   springboot,
+  azure
 
 };
 
