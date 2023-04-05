@@ -122,8 +122,8 @@ function Skills(props) {
     { 'name'  : "node.js"  , 'image'   : nodejs, "category" : backEnd, "experience" : "2.5 Year Experience" },
     { 'name'  : "Spring Boot"  , 'image'   : springboot , "category" : backEnd, "experience" : "1 Year Experience" },
     { 'name'  : "SQL"  , 'image'   : sql, "category" : other , "experience" : "3 Year Experience"},
-    { 'name'  : "MongoDB"  , 'image'   : mongo, "category" : backEnd, "experience" : "2 Year Experience" },
-    { 'name'  : "PostgreSQL"  , 'image'   : postgresql, "category" : backEnd, "experience" : "2 Year Experience" },
+    { 'name'  : "MongoDB"  , 'image'   : mongo, "category" : other, "experience" : "2 Year Experience" },
+    { 'name'  : "PostgreSQL"  , 'image'   : postgresql, "category" : other, "experience" : "2 Year Experience" },
     { 'name'  : "Adobe Photoshop"  , 'image'   : PS, "category" : other , "experience" : "1 Year Experience"},
     { 'name'  : "OpenGL"  , 'image'   : opengl, "category" : other, "experience" : "1 Year Experience" },
     { 'name'  : "ASP.NET"  , 'image'   : ASPNET2, "category" : backEnd, "experience" : "2 Year Experience" },
@@ -386,7 +386,7 @@ function App() {
 
 
               <Col className= "equal text-center">
-              <button className="invis" onClick={() => selectedCategory(other)}  >Other</button>
+              <button className="invis" onClick={() => selectedCategory(other)}  >Tools</button>
               </Col>
 
             </Row>
