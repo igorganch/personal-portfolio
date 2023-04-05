@@ -31,7 +31,7 @@ import { bootstrappng,css,django,hmtl,jq,js,postgresql,PS, python,
   ASPNET2,
   NETCORE,
   PHP,
-  postgresql 
+ 
 
 
  } from './index.js';
