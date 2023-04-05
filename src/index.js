@@ -49,7 +49,7 @@ import EduTechnoz from './images/EduTechnoz.mp4';
 import MusicManagementApp from './images/MusicManagementApp.mp4';
 import springboot from './images/spring-boot.png';
 import azure from './images/azure.png';
-
+import aws from './images/AWS.png';
 
 
 export{
@@ -94,7 +94,8 @@ export{
   EduTechnoz,
   MusicManagementApp,
   springboot,
-  azure
+  azure,
+  aws
 
 };
 
