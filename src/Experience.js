@@ -30,7 +30,8 @@ import { bootstrappng,css,django,hmtl,jq,js,postgresql,PS, python,
   ASPNET1,
   ASPNET2,
   NETCORE,
-  PHP
+  PHP,
+  postgresql 
 
 
  } from './index.js';
@@ -183,7 +184,7 @@ render(){
               Kiuloper
               </div>
               <div className="jobcentertext3">
-              January - April 2022
+              January 2022 - April 2022
               </div>
             </div>
             <div  hidden className="jobSkillExp">
@@ -211,7 +212,41 @@ render(){
             
           </div>
 
-          <div id = "job1"className = "moveBackExperience">
+          <div className = "moveBackExperience">
+              <div className="jobcentertext">
+              Freelance Web Developer
+              </div>
+              <div className="jobcentertext2">
+              IlikeIT
+              </div>
+              <div className="jobcentertext3">
+              January 2023 - Present
+              </div>
+            </div>
+            <div  hidden className="jobSkillExp">
+              
+                <div className="FlexSkillsExp">
+                  <img className = "zoom images"src={css} />
+                  <img className = "zoom images"src={hmtl} />
+                  <img className = "zoom images"src={js} />
+                  <img className = "zoom images"src={jq} />
+                  <img className = "zoom images"src={sql} />
+                  <img className = "zoom images"src={nodejs} />
+                </div>
+                <div className="jobDescriptiontext">
+                • Developed websites utilizing HTML, CSS, Javascript, JQuery, Ajax, JSON, REST API’s, Node.js, Express.js, SQL, PostgreSQL, Database Designing and Stripe Payments to meet my clients needs.
+                • Followed standard industry web development methodologies by adhering to proven design specifications and design techniques to ensure the client receives a quality website.
+                • Designed modern, clean, fully responsive user interfaces for clients.
+
+
+              </div>
+  
+            </div>
+
+            
+          </div>
+
+          <div id = "job3"className = "moveBackExperience">
           <div className="sor1">
           <hr className='expHeaderLine exphr'></hr>
           </div>
@@ -243,7 +278,7 @@ render(){
           </div>
 
 
-          <div  id = "job3" className = "moveBackExperience">
+          <div  id = "job4" className = "moveBackExperience">
           <div className="sor1">
           <hr className='expHeaderLine exphr'></hr>
           </div>
