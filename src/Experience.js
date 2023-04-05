@@ -214,8 +214,8 @@ render(){
 
 
             <div id = "job2"className = "moveBackExperience">
-          <div className="sor">
-          <hr className='projHeaderLine1 exphr'></hr> 
+          <div className="sor1">
+          <hr className='expHeaderLine exphr'></hr>
           </div>
           
             <div className = "FlexJob">
