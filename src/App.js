@@ -47,7 +47,7 @@ import { bootstrappng,css,django,hmtl,jq,js,postgresql,PS, python,
   PHP,
   EduTechnoz,
   MusicManagementApp,
-  springboot
+
 
 
  } from './index.js';
@@ -119,7 +119,7 @@ function Skills(props) {
     { 'name'  : "Python"  , 'image'   : python, "category" : fullStack, "experience" : "1 Year Experience" },
     { 'name'  : "Java"  , 'image'   : java, "category" :  fullStack, "experience" : "2 Year Experience"},
     { 'name'  : "node.js"  , 'image'   : nodejs, "category" : backEnd, "experience" : "2.5 Year Experience" },
-    { 'name'  : "Spring Boot"  , 'image'   : springboot, "category" : backEnd, "experience" : "1 Year Experience" },
+    { 'name'  : "Spring Boot"  , 'image'   : mongo , "category" : backEnd, "experience" : "1 Year Experience" },
     { 'name'  : "SQL"  , 'image'   : sql, "category" : other , "experience" : "3 Year Experience"},
     { 'name'  : "MongoDB"  , 'image'   : mongo, "category" : backEnd, "experience" : "2 Year Experience" },
     { 'name'  : "PostgreSQL"  , 'image'   : postgresql, "category" : backEnd, "experience" : "2 Year Experience" },
