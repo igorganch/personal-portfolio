@@ -46,7 +46,8 @@ import { bootstrappng,css,django,hmtl,jq,js,postgresql,PS, python,
   NETCORE,
   PHP,
   EduTechnoz,
-  MusicManagementApp
+  MusicManagementApp,
+  springboot
 
 
  } from './index.js';
@@ -102,7 +103,7 @@ function Skills(props) {
   const other ="other";
   let [category,selectedCategory] = useState(props.category);
   const [skillArray,setSkillArray] =useState([]);
-
+  springboot
   const [skills, skillsSets] = useState([
     { 'name'  : "JavaScript"  , 'image'   : js, "category" : fullStack, "experience" : "3 Year Experience" },
     { 'name'  : "Django"  , 'image'   : django, "category" : backEnd, "experience" : "1 Year Experience" },
@@ -118,6 +119,7 @@ function Skills(props) {
     { 'name'  : "Python"  , 'image'   : python, "category" : fullStack, "experience" : "1 Year Experience" },
     { 'name'  : "Java"  , 'image'   : java, "category" :  fullStack, "experience" : "2 Year Experience"},
     { 'name'  : "node.js"  , 'image'   : nodejs, "category" : backEnd, "experience" : "2.5 Year Experience" },
+    { 'name'  : "Spring Boot"  , 'image'   : springboot, "category" : backEnd, "experience" : "1 Year Experience" },
     { 'name'  : "SQL"  , 'image'   : sql, "category" : other , "experience" : "3 Year Experience"},
     { 'name'  : "MongoDB"  , 'image'   : mongo, "category" : backEnd, "experience" : "2 Year Experience" },
     { 'name'  : "PostgreSQL"  , 'image'   : postgresql, "category" : backEnd, "experience" : "2 Year Experience" },
