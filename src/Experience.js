@@ -240,9 +240,9 @@ render(){
                   <img className = "zoom images"src={nodejs} />
                 </div>
                 <div className="jobDescriptiontext">
-                • Developed websites utilizing HTML, CSS, Javascript, JQuery, Ajax, JSON, REST API’s, Node.js, Express.js, SQL, PostgreSQL, Database Designing and Stripe Payments to meet my clients needs.
-                • Followed standard industry web development methodologies by adhering to proven design specifications and design techniques to ensure the client receives a quality website.
-                • Designed modern, clean, fully responsive user interfaces for clients.
+                • Developed websites utilizing HTML, CSS, Javascript, JQuery, Ajax, JSON, REST API’s, Node.js, Express.js, SQL, PostgreSQL, Database Designing and Stripe Payments to meet my clients needs.<br></br>
+                • Followed standard industry web development methodologies by adhering to proven design specifications and design techniques to ensure the client receives a quality website.<br></br>
+                • Designed modern, clean, fully responsive user interfaces for clients.<br></br>
 
               </div>
   
