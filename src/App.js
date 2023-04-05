@@ -44,7 +44,8 @@ import { bootstrappng,css,django,hmtl,jq,js,postgresql,PS, python,
   ASPNET2,
   NETCORE,
   PHP,
-  EduTechnoz
+  EduTechnoz,
+  MusicManagementApp
 
 
  } from './index.js';
@@ -178,8 +179,8 @@ function App() {
 
 
   const [projects, projectSets]  = useState([
-      {'name' : 'EduTechnoz', 'video' : EduTechnoz,  'live' : true , 'tools' : ['React' ,'JavaScript', 'HTML5', 'CSS'], 'github' : "" ,  'liveurl' : "https://sample.edutechnoz.com/",   'desc'  : "A series of pages for a kids educational company I had to create during my internship in Kiuloper. It is responsive on every device." },
-      {'name' : 'Blog website', 'video' :  blogvid,  'live' : true , 'tools' : ['Angular' , 'Bootstrap'],'github' : "https://github.com/igorganch/Blog-Website" ,'liveurl' : "https://inspiring-snyder-def874.netlify.app"  ,'desc'  : "A blog website where user's are able post, comment, and use hashtags. There is also an Admin section where the owner can edit and remove posts." },
+      {'name' : 'EduTechnoz', 'video' : EduTechnoz,  'live' : true , 'tools' : ['React' ,'JavaScript', 'HTML5', 'CSS'], 'github' : "https://www.igancharenka.com/" ,  'liveurl' : "https://sample.edutechnoz.com/",   'desc'  : "A series of pages for a kids educational company I had to create during my internship in Kiuloper. It is responsive on every device." },
+      {'name' : 'Music Mangement App', 'video' : MusicManagementApp,  'live' : true , 'tools' : ['ASP.NET', 'MVC', 'Azure', 'HTML5' ,'CSS',], 'github' : "https://github.com/igorganch/MusicManagementWebApp" ,  'liveurl' : "https://musicmanagement-wa.azurewebsites.net/",   'desc'  : "A music management app where users are able to add/edit/delete/view  tracks, albums, artists all on one website.  Different user roles have different privileges. The app also implements security concepts. " },
       {'name' : 'Dealership API', 'video' : dealershipAPI,  'live' : true ,'tools' : ['Node.js' , 'JavaScript', 'HTML5', 'Rest API'], 'github' : "https://github.com/igorganch/dealershipAPI" ,'liveurl' : "https://dealership-db.herokuapp.com/", 'desc'  : "This is a simple web app API which retrieves data from a database and a user is able to perform CRUD operations" },
       {'name' : 'Mobile Cashier App', 'video' : cashierApp,  'live' : true , 'tools' : ['Angular' , 'HTML', 'OOP', 'CSS'],'github' : "https://github.com/igorganch/Angular-Cashier-App" , 'liveurl' : "https://heuristic-shannon-eaaa58.netlify.app/", 'desc'  : "This an Angular Ionic mobile app that acts as a cash register which manages restocking, purchases, and purchase histories. " },
       {'name' : 'Inventory Manager', 'video' : invvid, 'live' : false ,'tools' : ['C++' , 'OOP'],'github' : "https://github.com/igorganch/Inventory-Manager" ,  'liveurl' : "", 'desc'  : "This app serves a purpose of keeping track of orders, inventory, and items sold." },
