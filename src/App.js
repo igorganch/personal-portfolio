@@ -10,7 +10,7 @@ import 'aos/dist/aos.css'
 import { Container, Row, Col, Card, Table, Button, Badge} from 'react-bootstrap';
 import {Link} from 'react-scroll';
 import reactsvg from './logo.svg';
-import resume from "./IHARGANCHARENKA-RESUME.pdf"
+import resume from "./IHARGANCHARENKA.RESUME.pdf"
 import Experience from "./Experience.js";
 
 import Hello from './Hello.js'
