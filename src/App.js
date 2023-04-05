@@ -95,26 +95,26 @@ function Skill(props){
 
 
 function Skills(props) {
+  const languages = "languages";
   const frontEnd = "frontEnd";
   const backEnd = "backEnd";
-  const fullStack = "fullStack";
   const other ="other";
   let [category,selectedCategory] = useState(props.category);
   const [skillArray,setSkillArray] =useState([]);
 
   const [skills, skillsSets] = useState([
-    { 'name'  : "JavaScript"  , 'image'   : js, "category" : fullStack, "experience" : "3 Year Experience" },
-    { 'name'  : "Django"  , 'image'   : django, "category" : fullStack, "experience" : "1 Year Experience" },
+    { 'name'  : "JavaScript"  , 'image'   : js, "category" : languages, "experience" : "3 Year Experience" },
+    { 'name'  : "Django"  , 'image'   : django, "category" : backEnd, "experience" : "1 Year Experience" },
     { 'name'  : "React.js"  , 'image'   : reactpng, "category" : frontEnd, "experience" : "1.5 Year Experience" },
     { 'name'  : "Angular"  , 'image'   : angular, "category" : frontEnd, "experience" : "1.5 Year Experience" },
     { 'name'  : "CSS"  , 'image'   : css, "category" : frontEnd, "experience" : "3 Year Experience" },
     { 'name'  : "JQuery"  , 'image'   : jq, "category" : frontEnd, "experience" : "3 Year Experience" },
     { 'name'  : "HTML5"  , 'image'   : hmtl, "category" : frontEnd, "experience" : "3 Year Experience" },
     { 'name'  : "Bootstrap"  , 'image'   : bootstrappng, "category" : frontEnd, "experience" : "3 Year Experience" },
-    { 'name'  : "C++"  , 'image'   : cplusspluss, "category" : other, "experience" : "3 Year Experience" },
-    { 'name'  : "C#"  , 'image'   : csharp, "category" : other, "experience" : "2 Year Experience" },
-    { 'name'  : "C"  , 'image'   : c, "category" : other, "experience" : "4 Year Experience" },
-    { 'name'  : "Python"  , 'image'   : python, "category" : other, "experience" : "1 Year Experience" },
+    { 'name'  : "C++"  , 'image'   : cplusspluss, "category" : languages, "experience" : "3 Year Experience" },
+    { 'name'  : "C#"  , 'image'   : csharp, "category" : languages, "experience" : "2 Year Experience" },
+    { 'name'  : "C"  , 'image'   : c, "category" : languages, "experience" : "4 Year Experience" },
+    { 'name'  : "Python"  , 'image'   : python, "category" : languages, "experience" : "1 Year Experience" },
     { 'name'  : "Java"  , 'image'   : java, "category" :  other, "experience" : "2 Year Experience"},
     { 'name'  : "node.js"  , 'image'   : nodejs, "category" : backEnd, "experience" : "2.5 Year Experience" },
     { 'name'  : "SQL"  , 'image'   : sql, "category" : other , "experience" : "3 Year Experience"},
@@ -124,7 +124,8 @@ function Skills(props) {
     { 'name'  : "OpenGL"  , 'image'   : opengl, "category" : other, "experience" : "1 Year Experience" },
     { 'name'  : "ASP.NET"  , 'image'   : ASPNET2, "category" : backEnd, "experience" : "2 Year Experience" },
     { 'name'  : ".NET Core"  , 'image'   : NETCORE, "category" : backEnd, "experience" : "1 Year Experience" },
-    { 'name'  : "PHP"  , 'image'   : PHP, "category" : backEnd, "experience" : "2 Year Experience" }
+      { 'name'  : ".NET Core"  , 'image'   : NETCORE, "category" : backEnd, "experience" : "1 Year Experience" },
+    { 'name'  : "PHP"  , 'image'   : PHP, "category" : languages, "experience" : "2 Year Experience" }
 ]) 
 
 
@@ -158,9 +159,9 @@ function App() {
   useEffect(()=>{
     AOS.init();
   });
+  const languages = "languages";
   const frontEnd = "frontEnd";
   const backEnd = "backEnd";
-  const fullStack = "fullStack";
   const other ="other";
   const [category,selectedCategory] = useState(frontEnd);
 
@@ -368,13 +369,8 @@ function App() {
             <Row className = "navItems">
 
             <Col className= "equal text-center">
-              <button value = {fullStack} onClick={() => selectedCategory(fullStack)} className="invis">Full Stack</button>
-              </Col>
-
-
-              <Col className= "equal text-center">
               <button value = {frontEnd} onClick={() => selectedCategory(frontEnd)} className="invis">Front End</button>
-              </Col>
+            </Col>
 
               <Col className= "equal text-center">
               <button value = {backEnd} onClick={() => selectedCategory(backEnd)} className="invis">Back End</button>
@@ -383,6 +379,11 @@ function App() {
               <Col className= "equal text-center">
               <button className="invis" onClick={() => selectedCategory(other)}  >Other</button>
               </Col>
+
+            <Col className= "equal text-center">
+              <button value = {languages} onClick={() => selectedCategory(languages)} className="invis">Languages</button>
+              </Col>
+
 
             </Row>
           </Container>
