@@ -138,7 +138,7 @@ class Experience extends React.Component{
 render(){
 
     return(
-        <div id="expereince" className = "expereince">
+                 <div id="expereince" className = "expereince">
         <Container className = "navigationBar">
             <Row className = "navItems">
               <Col className= "equal text-center">
@@ -212,15 +212,21 @@ render(){
             
           </div>
 
-          <div className = "moveBackExperience">
+
+            <div id = "job2"className = "moveBackExperience">
+          <div className="sor">
+          <hr className='projHeaderLine1 exphr'></hr> 
+          </div>
+          
+            <div className = "FlexJob">
               <div className="jobcentertext">
-              Freelance Web Developer
+             Freelance Web Developer
               </div>
               <div className="jobcentertext2">
-              IlikeIT
+                IlikeIT
               </div>
               <div className="jobcentertext3">
-              January 2023 - Present
+            January 2023 - Present
               </div>
             </div>
             <div  hidden className="jobSkillExp">
@@ -238,13 +244,16 @@ render(){
                 • Followed standard industry web development methodologies by adhering to proven design specifications and design techniques to ensure the client receives a quality website.
                 • Designed modern, clean, fully responsive user interfaces for clients.
 
-
               </div>
   
             </div>
 
             
           </div>
+
+        
+
+
 
           <div id = "job3"className = "moveBackExperience">
           <div className="sor1">
