@@ -50,7 +50,7 @@ import MusicManagementApp from './images/MusicManagementApp.mp4';
 import springboot from './images/spring-boot.png';
 import azure from './images/azure.png';
 import aws from './images/AWS.png';
-import express from './images/express.png';
+import express from './images/express-js.png';
 
 
 export{
