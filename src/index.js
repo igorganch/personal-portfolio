@@ -47,6 +47,7 @@ import PHP from './images/PHP.png';
 import Kiuloper from './images/kiuloper.png';
 import EduTechnoz from './images/EduTechnoz.mp4'
 import MusicManagementApp from './images/MusicManagementApp.mp4'
+import springboot from './images/spring-boot.png'
 
 
 
@@ -90,7 +91,8 @@ export{
   PHP,
   Kiuloper,
   EduTechnoz,
-  MusicManagementApp
+  MusicManagementApp,
+  springboot
 
 };
 
