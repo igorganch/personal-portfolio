@@ -199,11 +199,12 @@ render(){
                   <img className = "zoom images"src={nodejs} />
                 </div>
                 <div className="jobDescriptiontext">
-                • Developed fully responsive UI interfaces using CSS, HTML, JavaScript, JQuery, DOM, PHP, & React for a client<br></br>
-                • Developed API routes using Node.js, Express.js & AWS to send information from the database to the front-end <br></br>
-                • Created web page sessions/cookies that travel across web pages used to query data from the database to bring  information to the front-end <br></br> 
-                • Contributed ideas & solutions to create more efficient/organized code for web pages<br></br>
-                • Worked with phpMyAdmin
+                  • Developed fully responsive user interfaces using CSS, HTML, JavaScript, JQuery, DOM, PHP, and React for clients. <br></br>
+                  • Proficiently created API routes utilizing Node.js, Express.js, and AWS, enabling seamless transmission of data from the database to the user interface.  <br></br>
+                  • Conducted thorough unit testing and integration testing to identify and resolve software bugs, optimizing application stability and user experience.  <br></br>
+                  • Contributed ideas and solutions to create more efficient/organized code for web pages.  <br></br>
+                  • Implemented a feature to facilitate concurrent database updates in AWS to improve application performance by 45%.  <br></br>
+
 
               </div>
   
