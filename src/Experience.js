@@ -221,10 +221,10 @@ render(){
           
             <div className = "FlexJob">
               <div className="jobcentertext">
-             Freelance Web Developer
+             Web Developer
               </div>
               <div className="jobcentertext2">
-                IlikeIT
+                Freelance
               </div>
               <div className="jobcentertext3">
             January 2023 - Present
