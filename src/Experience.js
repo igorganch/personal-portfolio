@@ -221,29 +221,26 @@ render(){
           
             <div className = "FlexJob">
               <div className="jobcentertext">
-             Web Developer
+             Threat Intelligence Analyst
               </div>
               <div className="jobcentertext2">
-                Freelance
+                Iron Defense Security Corporation
               </div>
               <div className="jobcentertext3">
-            January 2023 - Present
+            January 2024 - Present
               </div>
             </div>
             <div  hidden className="jobSkillExp">
               
                 <div className="FlexSkillsExp">
-                  <img className = "zoom images"src={css} />
-                  <img className = "zoom images"src={hmtl} />
-                  <img className = "zoom images"src={js} />
-                  <img className = "zoom images"src={jq} />
-                  <img className = "zoom images"src={sql} />
-                  <img className = "zoom images"src={nodejs} />
                 </div>
                 <div className="jobDescriptiontext">
-                • Developed websites utilizing HTML, CSS, Javascript, JQuery, Ajax, JSON, REST API’s, Node.js, Express.js, SQL, PostgreSQL, Database Designing and Stripe Payments to meet my clients needs.<br></br>
-                • Followed standard industry web development methodologies by adhering to proven design specifications and design techniques to ensure the client receives a quality website.<br></br>
-                • Designed modern, clean, fully responsive user interfaces for clients.<br></br>
+• Spearheaded the development and operationalization of threat intelligence processes to identify, assess, and mitigate cyber threats in real-time, reducing potential security breaches by 30% <br></br>
+• Integrated threat intelligence with existing security solutions, such as SIEM, firewalls, and intrusion detection systems to enhance the cybersecurity posture of over 30 companies <br></br>
+• Conducted in-depth analysis of threat landscapes, including malware analysis and phishing campaigns, contributing to effective defensive strategies that protected organizations critical digital assets <br></br>
+• Utilized advanced analytical tools and methodologies, such as STIX, TAXII for sharing and consuming threat intelligence improving the overall speed and accuracy of response to cyber incidents <br></br>
+• Implemented advanced malware detection using AI, improving threat detection speed and accuracy by 15% <br></br>
+
 
               </div>
   
