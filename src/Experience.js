@@ -214,33 +214,36 @@ render(){
           </div>
 
 
-          <div id = "job2"className = "moveBackExperience">
+            <div id = "job2"className = "moveBackExperience">
           <div className="sor1">
           <hr className='expHeaderLine exphr'></hr>
           </div>
           
             <div className = "FlexJob">
               <div className="jobcentertext">
-            Threat Intelligence Analyst
+             Web Developer
               </div>
               <div className="jobcentertext2">
-                Iron Defense Security Corporation
+                Freelance
               </div>
               <div className="jobcentertext3">
-            January 2024 - Present
+            January 2023 - Present
               </div>
             </div>
             <div  hidden className="jobSkillExp">
               
                 <div className="FlexSkillsExp">
+                  <img className = "zoom images"src={css} />
+                  <img className = "zoom images"src={hmtl} />
+                  <img className = "zoom images"src={js} />
+                  <img className = "zoom images"src={jq} />
+                  <img className = "zoom images"src={sql} />
+                  <img className = "zoom images"src={nodejs} />
                 </div>
                 <div className="jobDescriptiontext">
-• Spearheaded the development and operationalization of threat intelligence processes to identify, assess, and mitigate cyber threats in real-time, reducing potential security breaches by 30% <br></br>
-• Integrated threat intelligence with existing security solutions, such as SIEM, firewalls, and intrusion detection systems to enhance the cybersecurity posture of over 30 companies <br></br>
-• Conducted in-depth analysis of threat landscapes, including malware analysis and phishing campaigns, contributing to effective defensive strategies that protected organizations critical digital assets <br></br>
-• Utilized advanced analytical tools and methodologies, such as STIX, TAXII for sharing and consuming threat intelligence improving the overall speed and accuracy of response to cyber incidents <br></br>
-• Implemented advanced malware detection using AI, improving threat detection speed and accuracy by 15%
-
+                • Developed websites utilizing HTML, CSS, Javascript, JQuery, Ajax, JSON, REST API’s, Node.js, Express.js, SQL, PostgreSQL, Database Designing and Stripe Payments to meet my clients needs.<br></br>
+                • Followed standard industry web development methodologies by adhering to proven design specifications and design techniques to ensure the client receives a quality website.<br></br>
+                • Designed modern, clean, fully responsive user interfaces for clients.<br></br>
 
               </div>
   
@@ -276,7 +279,7 @@ render(){
                 </div>
                 <div className="jobDescriptiontext">
                 • Consistently managing the website/updating new arrivals to the website, performing market research <br></br>
-                • Preparing vehicles for presentation to customers, performing minor repairs & detailing, moving vehicles as required and other duties as assigned<br></br>
+                •Preparing vehicles for presentation to customers, performing minor repairs & detailing, moving vehicles as required and other duties as assigned<br></br>
 
               </div>
             </div>
