@@ -538,7 +538,7 @@ function App() {
               <div>
                 <div className ="flex-item">
                   <hr className = "conHeaderLine"></hr>
-                  <p className ="contactDesc">Want to work together? Send me a messages and also feel free to ring up my number!</p>
+                  <p className ="contactDesc">Want to work together? Send me a message and also feel free to call my number!</p>
                 </div>
               </div>
             </div>
