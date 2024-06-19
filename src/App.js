@@ -308,7 +308,7 @@ function App() {
             <div>
               <div className ="descAbout">
                 <hr className = "conHeaderLine"></hr>
-                <p className ="contactDesc">I'm a fullstack developer located in Toronto, Ontario, Canada. <br></br><br></br>I have a crazy passion for coding and during my spare time I love to learn new software development tools and create apps for fun. I'm currently looking for a position to contribute and expand my abilities in programming.</p>
+                <p className ="contactDesc">I'm a Full-stack Developer and Cyber Security Analyst. <br></br><br></br>I have a deep passion for coding and a relentless drive to learn new software development tools. In my spare time, I enjoy creating apps for fun and exploring the latest advancements in technology. I'm currently seeking a position where I can contribute my skills and expand my expertise in programming, bringing innovative solutions and a strong work ethic to the team</p>
               </div>
             </div>
           </div>
