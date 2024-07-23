@@ -199,11 +199,9 @@ render(){
                   <img className = "zoom images"src={nodejs} />
                 </div>
                 <div className="jobDescriptiontext">
-                  • Developed fully responsive user interfaces using CSS, HTML, JavaScript, JQuery, DOM, PHP, and React for clients. <br></br>
-                  • Proficiently created API routes utilizing Node.js, Express.js, and AWS, enabling seamless transmission of data from the database to the user interface.  <br></br>
-                  • Conducted thorough unit testing and integration testing to identify and resolve software bugs, optimizing application stability and user experience.  <br></br>
-                  • Contributed ideas and solutions to create more efficient/organized code for web pages.  <br></br>
-                  • Implemented a feature to facilitate concurrent database updates in AWS to improve application performance by 45%.  <br></br>
+                  • Increased user engagement by 40% by successfully redeveloping a full-stack web application for a high-profile client, optimizing SEO and using CSS, HTML and React <br></br> 
+     • Achieved a 20% overall  improvement in page load times by proficiently creating API routes utilizing Node.js, Express.js and optimizing AWS MySQL queries <br></br>
+ • Conducted thorough unit testing and integration testing following test plans and strategies to identify and resolve software bugs, optimizing application stability and user experience <br></br>
 
 
               </div>
@@ -235,11 +233,11 @@ render(){
                 <div className="FlexSkillsExp">
                 </div>
                 <div className="jobDescriptiontext">
-• Spearheaded the development and operationalization of threat intelligence processes to identify, assess, and mitigate cyber threats in real-time, reducing potential security breaches by 30% <br></br>
-• Integrated threat intelligence with existing security solutions, such as SIEM, firewalls, and intrusion detection systems to enhance the cybersecurity posture of over 30 companies <br></br>
+• Decreased potential security breaches by 30% by leading the development and implementation of threat intelligence processes, enabling real-time identification, assessment, and mitigation of cyber threats <br></br>
+• Enhanced the cybersecurity posture of over 30 companies by integrating threat intelligence with existing security solutions, such as SIEM, firewalls, and intrusion detection systems <br></br>
 • Conducted in-depth analysis of threat landscapes, including malware analysis and phishing campaigns, contributing to effective defensive strategies that protected organizations critical digital assets <br></br>
-• Utilized advanced analytical tools and methodologies, such as STIX, TAXII for sharing and consuming threat intelligence improving the overall speed and accuracy of response to cyber incidents <br></br>
-• Implemented advanced malware detection using AI, improving threat detection speed and accuracy by 15% <br></br>
+• Utilized advanced analytical tools and methodologies, such as STIX and TAXII, for sharing and consuming threat intelligence, improving the overall speed and accuracy of response to cyber incidents <br></br>
+• Increased threat detection speed and accuracy by 15% by implementing advanced AI-driven malware detection <br></br>
 
 
               </div>
