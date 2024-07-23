@@ -193,8 +193,6 @@ render(){
                   <img className = "zoom images"src={css} />
                   <img className = "zoom images"src={hmtl} />
                   <img className = "zoom images"src={js} />
-                  <img className = "zoom images"src={jq} />
-                  <img className = "zoom images"src={PHP} />
                   <img className = "zoom images"src={reactpng} />
                   <img className = "zoom images"src={nodejs} />
                 </div>
